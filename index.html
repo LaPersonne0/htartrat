@@ -44,7 +44,6 @@
                     <button onclick="switchTab('presentation')" class="nav-btn text-sm font-bold transition-colors duration-200 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 hover:border-emerald-300 pb-1" data-target="presentation">À PROPOS</button>
                     <button onclick="switchTab('projets')" class="nav-btn text-sm font-bold transition-colors duration-200 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 hover:border-emerald-300 pb-1" data-target="projets">PROJETS</button>
                     <button onclick="switchTab('veille')" class="nav-btn text-sm font-bold transition-colors duration-200 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 hover:border-emerald-300 pb-1" data-target="veille">VEILLE</button>
-                    <button onclick="switchTab('epreuve')" class="nav-btn text-sm font-bold transition-colors duration-200 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 hover:border-emerald-300 pb-1" data-target="epreuve">ÉPREUVE E4</button>
                     <button onclick="switchTab('contact')" class="nav-btn text-sm font-bold transition-colors duration-200 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 hover:border-emerald-300 pb-1" data-target="contact">CONTACT</button>
                 </div>
                 <div class="md:hidden">
@@ -59,7 +58,6 @@
             <button onclick="switchTab('presentation')" class="block w-full text-left px-6 py-4 text-sm font-bold text-slate-600 hover:bg-slate-50 border-l-4 border-transparent hover:border-emerald-500 nav-btn-mobile" data-target="presentation">À propos</button>
             <button onclick="switchTab('projets')" class="block w-full text-left px-6 py-4 text-sm font-bold text-slate-600 hover:bg-slate-50 border-l-4 border-transparent hover:border-emerald-500 nav-btn-mobile" data-target="projets">Projets</button>
             <button onclick="switchTab('veille')" class="block w-full text-left px-6 py-4 text-sm font-bold text-slate-600 hover:bg-slate-50 border-l-4 border-transparent hover:border-emerald-500 nav-btn-mobile" data-target="veille">Veille</button>
-            <button onclick="switchTab('epreuve')" class="block w-full text-left px-6 py-4 text-sm font-bold text-slate-600 hover:bg-slate-50 border-l-4 border-transparent hover:border-emerald-500 nav-btn-mobile" data-target="epreuve">Épreuve E4</button>
             <button onclick="switchTab('contact')" class="block w-full text-left px-6 py-4 text-sm font-bold text-slate-600 hover:bg-slate-50 border-l-4 border-transparent hover:border-emerald-500 nav-btn-mobile" data-target="contact">Contact</button>
         </div>
     </nav>
@@ -221,9 +219,18 @@
         <section id="projets" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-12 relative">
             <div id="projects-grid-view">
                 <div class="text-center mb-12">
-                    <h2 class="text-3xl font-bold text-stone-800 mb-2">Projets & Situations Professionnelles</h2>
-                    <div class="w-20 h-1 bg-emerald-500 mx-auto rounded-full mb-4"></div>
-                    <p class="text-slate-500">Épreuve E4 - BTS SIO Option SISR</p>
+                    <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-600 font-bold px-4 py-2 rounded-full mb-6 border border-emerald-100">
+                        <i class="fa-solid fa-graduation-cap"></i> Épreuve E4 - BTS SIO Option SISR
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">Projets & <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Tableau de Synthèse</span></h2>
+                    <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed mb-10">
+                        Retrouvez ci-dessous la cartographie officielle de mes réalisations professionnelles associées aux compétences du référentiel, ainsi que le détail de mes projets.
+                    </p>
+                    
+                    <!-- Bouton pour télécharger le fichier officiel -->
+                    <a href="Annexe-6-1-Tableau-de-synthese-Epreuve-E4-BTS-SIO-2022 (1).ods" download="Tableau_Synthese_E4_Hugo_Tartrat.ods" class="inline-flex items-center gap-3 bg-slate-900 hover:bg-emerald-600 text-white px-8 py-5 rounded-2xl font-bold transition-all shadow-xl hover:shadow-emerald-500/30 hover:-translate-y-1 text-lg mb-8">
+                        <i class="fa-solid fa-file-arrow-down text-2xl"></i> Télécharger mon Tableau E4
+                    </a>
                 </div>
 
                 <!-- CARTE DES PROJETS MAJEURS -->
@@ -231,19 +238,19 @@
                     <!-- PROJET 1 -->
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group" onclick="showProjectDetail(1)">
                         <div class="h-56 relative overflow-hidden bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bbcbf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="LAN" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bbcbf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Jamf" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80"></div>
                             <div class="absolute bottom-4 left-4 right-4 text-white">
                                 <span class="bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider mb-2 inline-block">Projet Majeur</span>
-                                <h3 class="text-xl font-bold leading-tight">Migration de la gestion de parc vers le MDM Jamf Pro</h3>
+                                <h3 class="text-xl font-bold leading-tight">Migration MDM Jamf Pro & Automatisation</h3>
                             </div>
                         </div>
                         <div class="p-6 flex-1 flex flex-col">
-                            <p class="text-sm text-slate-600 mb-4 flex-1">Déploiement de la solution MDM Jamf Pro pour centraliser la gestion, la configuration et la sécurité du parc Apple chez Tut Tut.</p>
+                            <p class="text-sm text-slate-600 mb-4 flex-1">Déploiement de la solution MDM Jamf Pro pour centraliser la gestion, la configuration et la sécurité du parc Apple chez Tut Tut, avec automatisation des tâches.</p>
                             <div class="flex flex-wrap gap-2 mb-6">
                                 <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Jamf Pro</span>
                                 <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">MDM</span>
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">macOS</span>
+                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Automatisation</span>
                             </div>
                             <button class="w-full bg-slate-800 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-colors text-sm flex justify-center items-center gap-2">
                                 Lire l'étude de cas <i class="fa-solid fa-chevron-right"></i>
@@ -254,18 +261,18 @@
                     <!-- PROJET 2 -->
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group" onclick="showProjectDetail(2)">
                         <div class="h-56 relative overflow-hidden bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1562504208-03d85cc8c23e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="WIFI" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
+                            <img src="https://images.unsplash.com/photo-1562504208-03d85cc8c23e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Itway" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80"></div>
                             <div class="absolute bottom-4 left-4 right-4 text-white">
                                 <span class="bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider mb-2 inline-block">Projet Majeur</span>
-                                <h3 class="text-xl font-bold leading-tight">Déploiement d'un Pare-feu OPNsense (Filtrage, NAT)</h3>
+                                <h3 class="text-xl font-bold leading-tight">Projet Itway (Infrastructure & Réseau)</h3>
                             </div>
                         </div>
                         <div class="p-6 flex-1 flex flex-col">
-                            <p class="text-sm text-slate-600 mb-4 flex-1">Mise en place d'un pare-feu, configuration des règles de filtrage et du NAT pour sécuriser le périmètre réseau.</p>
+                            <p class="text-sm text-slate-600 mb-4 flex-1">Conception, déploiement et sécurisation d'une infrastructure réseau complète (VLAN, Routage, Pare-feu) dans le cadre de ma formation.</p>
                             <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">OPNsense</span>
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Pare-feu</span>
+                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Infrastructure</span>
+                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">VLAN</span>
                                 <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Sécurité</span>
                             </div>
                             <button class="w-full bg-slate-800 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-colors text-sm flex justify-center items-center gap-2">
@@ -275,13 +282,13 @@
                     </div>
                 </div>
 
-                <!-- TABLEAU DES 12 RÉALISATIONS MINEURES -->
+                <!-- TABLEAU DES RÉALISATIONS MINEURES -->
                 <div class="mt-16 pt-12 border-t border-slate-200">
                     <div class="text-center mb-10">
                         <h2 class="text-2xl font-bold text-slate-800 mb-2 flex justify-center items-center gap-2">
                             <i class="fa-solid fa-table-cells-large text-emerald-500"></i> Autres Réalisations (Tableau de Synthèse)
                         </h2>
-                        <p class="text-sm text-slate-500">Missions complémentaires réalisées en formation et en entreprise.</p>
+                        <p class="text-sm text-slate-500">Aperçu global des situations professionnelles présentées dans mon tableau E4.</p>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="minor-projects-container"></div>
                 </div>
@@ -293,8 +300,8 @@
                     <i class="fa-solid fa-arrow-left"></i> Retour aux projets
                 </button>
                 <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
-                    <h1 class="text-3xl font-extrabold text-slate-900 mb-6">Migration de la gestion de parc vers le MDM Jamf Pro</h1>
-                    <p class="text-slate-600 mb-4">Détails du projet chez Tut Tut : Centralisation et sécurisation des terminaux Apple via le MDM Jamf Pro.</p>
+                    <h1 class="text-3xl font-extrabold text-slate-900 mb-6">Migration MDM Jamf Pro & Automatisation</h1>
+                    <p class="text-slate-600 mb-4">Détails du projet chez Tut Tut : Centralisation, sécurisation des terminaux Apple et création de scripts d'automatisation via le MDM Jamf Pro.</p>
                     <!-- Contenu détaillé à ajouter si besoin -->
                 </div>
             </div>
@@ -303,8 +310,8 @@
             <div id="project-detail-2" class="hidden animate-fadeIn max-w-7xl mx-auto py-8">
                 <button onclick="hideProjectDetail()" class="flex items-center gap-2 text-slate-500 hover:text-emerald-600 mb-8 font-medium transition-colors"><i class="fa-solid fa-arrow-left"></i> Retour aux projets</button>
                 <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
-                    <h1 class="text-3xl font-extrabold text-slate-900 mb-6">Déploiement d'un Pare-feu OPNsense (Filtrage, NAT)</h1>
-                    <p class="text-slate-600 mb-4">Détails du projet académique : Configuration d'OPNsense, règles de pare-feu et translation d'adresses.</p>
+                    <h1 class="text-3xl font-extrabold text-slate-900 mb-6">Projet Itway (Infrastructure & Réseau)</h1>
+                    <p class="text-slate-600 mb-4">Détails du projet académique : Conception et sécurisation de l'infrastructure réseau, segmentation par VLAN et règles de pare-feu.</p>
                 </div>
             </div>
         </section>
@@ -359,26 +366,6 @@
                     <i class="fa-solid fa-circle-notch fa-spin text-3xl mb-3"></i>
                     <p>Récupération des derniers articles en cours...</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- ========================================================= -->
-        <!-- EPREUVE E4 -->
-        <!-- ========================================================= -->
-        <section id="epreuve" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-16">
-            <div class="text-center mb-12">
-                <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-600 font-bold px-4 py-2 rounded-full mb-6 border border-emerald-100">
-                    <i class="fa-solid fa-graduation-cap"></i> BTS SIO Option SISR
-                </div>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">Tableau de Synthèse <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">E4</span></h2>
-                <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed mb-10">
-                    Retrouvez ci-dessous la cartographie officielle de mes réalisations professionnelles associées aux compétences du référentiel BTS SIO.
-                </p>
-                
-                <!-- Bouton pour télécharger le fichier officiel -->
-                <a href="Annexe-6-1-Tableau-de-synthese-Epreuve-E4-BTS-SIO-2022 (1).ods" download="Tableau_Synthese_E4_Hugo_Tartrat.ods" class="inline-flex items-center gap-3 bg-slate-900 hover:bg-emerald-600 text-white px-8 py-5 rounded-2xl font-bold transition-all shadow-xl hover:shadow-emerald-500/30 hover:-translate-y-1 text-lg">
-                    <i class="fa-solid fa-file-arrow-down text-2xl"></i> Télécharger mon Tableau E4
-                </a>
             </div>
         </section>
 
@@ -544,17 +531,13 @@
         }
 
         const minorProjects = [
-            { id: 101, title: "Mise en production d'un serveur GLPI v4", cat: "Formation", icon: "fa-solid fa-server text-purple-500", desc: "Installation et configuration d'un serveur GLPI pour la gestion de parc et le helpdesk.", skills: ["GLPI", "ITSM", "Linux"] },
-            { id: 102, title: "Installation et administration d'un Active Directory", cat: "Système", icon: "fa-solid fa-users-gear text-indigo-500", desc: "Déploiement d'un contrôleur de domaine, gestion des utilisateurs, groupes et stratégies de groupe (GPO).", skills: ["Active Directory", "Windows Server", "GPO"] },
-            { id: 103, title: "Configuration de switchs Cisco et routage inter-VLAN", cat: "Réseau", icon: "fa-solid fa-network-wired text-blue-500", desc: "Configuration des équipements actifs Cisco, création de VLANs et mise en place du routage.", skills: ["Cisco", "VLAN", "Routage"] },
-            { id: 104, title: "Déploiement d'un Pare-feu OPNsense (Filtrage, NAT)", cat: "Sécurité", icon: "fa-solid fa-fire-burner text-red-500", desc: "Mise en place d'un pare-feu, configuration des règles de filtrage et du NAT pour sécuriser le périmètre.", skills: ["OPNsense", "Pare-feu", "Sécurité"] },
-            { id: 105, title: "Déploiement d'un espace collaboratif NextCloud", cat: "Formation", icon: "fa-solid fa-cloud text-sky-500", desc: "Installation d'un serveur NextCloud pour le partage sécurisé de fichiers et la collaboration.", skills: ["NextCloud", "Linux", "Stockage"] },
-            { id: 106, title: "Ticketing et Support de proximité N1/N2 (macOS, O365)", cat: "Tut Tut", icon: "fa-solid fa-headset text-amber-500", desc: "Assistance technique aux utilisateurs, résolution d'incidents matériels et logiciels sous environnement Apple et Microsoft 365.", skills: ["Support", "macOS", "Microsoft 365"] },
-            { id: 107, title: "Gestion des comptes utilisateurs (AD, M365) et Bitwarden", cat: "Tut Tut", icon: "fa-solid fa-key text-teal-500", desc: "Création et gestion sécurisée des identités et accès (IAM) avec Active Directory, Microsoft 365 et le gestionnaire de mots de passe Bitwarden.", skills: ["IAM", "Active Directory", "Bitwarden"] },
-            { id: 108, title: "Reconditionnement et maintenance du parc matériel (Hardware)", cat: "Tut Tut", icon: "fa-solid fa-screwdriver-wrench text-slate-500", desc: "Diagnostic, réparation et reconditionnement des équipements informatiques pour prolonger leur durée de vie.", skills: ["Hardware", "Maintenance", "Diagnostic"] },
-            { id: 109, title: "Migration de la gestion de parc vers le MDM Jamf Pro", cat: "Tut Tut", icon: "fa-solid fa-mobile-screen text-blue-500", desc: "Déploiement de la solution MDM Jamf Pro pour centraliser la gestion, la configuration et la sécurité du parc Apple.", skills: ["Jamf Pro", "MDM", "Apple"] },
-            { id: 110, title: "Automatisation de l'administration via scripts macOS", cat: "Tut Tut", icon: "fa-solid fa-terminal text-emerald-600", desc: "Création de scripts (Bash/Zsh) pour automatiser les tâches d'administration et de déploiement sur les postes macOS.", skills: ["Scripting", "macOS", "Automatisation"] },
-            { id: 111, title: "Analyse de sécurité et architecture ZTNA (Jamf Protect)", cat: "Tut Tut", icon: "fa-solid fa-shield-halved text-emerald-500", desc: "Mise en place d'une architecture Zero Trust et analyse de sécurité continue des terminaux avec Jamf Protect.", skills: ["Jamf Protect", "ZTNA", "Cybersécurité"] }
+            { id: 101, title: "Création du Portefolio numérique", cat: "Personnel", icon: "fa-solid fa-laptop-code text-indigo-500", desc: "Conception et développement d'un portfolio web interactif pour présenter mes compétences et réalisations lors de l'épreuve E4.", skills: ["HTML/CSS", "JavaScript", "Développement Web"] },
+            { id: 102, title: "Projet Itway (Infrastructure & Réseau)", cat: "Formation", icon: "fa-solid fa-network-wired text-blue-500", desc: "Conception, déploiement et sécurisation d'une infrastructure réseau complète (VLAN, Routage, Pare-feu) dans le cadre du projet Itway.", skills: ["Infrastructure", "Réseau", "VLAN", "Sécurité"] },
+            { id: 103, title: "Mise en place d'une solution de Supervision", cat: "Formation", icon: "fa-solid fa-desktop text-purple-500", desc: "Déploiement d'un outil de supervision pour surveiller l'état de santé du réseau et des serveurs en temps réel.", skills: ["Supervision", "Monitoring", "Alertes"] },
+            { id: 104, title: "Ticketing et Support de proximité N1/N2 (macOS, O365)", cat: "Tut Tut", icon: "fa-solid fa-headset text-amber-500", desc: "Assistance technique aux utilisateurs, résolution d'incidents matériels et logiciels sous environnement Apple et Microsoft 365.", skills: ["Support", "macOS", "Microsoft 365"] },
+            { id: 105, title: "Gestion des comptes utilisateurs (AD, M365) et Bitwarden", cat: "Tut Tut", icon: "fa-solid fa-key text-teal-500", desc: "Création et gestion sécurisée des identités et accès (IAM) avec Active Directory, Microsoft 365 et le gestionnaire de mots de passe Bitwarden.", skills: ["IAM", "Active Directory", "Bitwarden"] },
+            { id: 106, title: "Migration MDM Jamf Pro & Automatisation", cat: "Tut Tut", icon: "fa-solid fa-mobile-screen text-emerald-600", desc: "Déploiement de la solution MDM Jamf Pro pour centraliser la gestion et la sécurité du parc Apple, avec automatisation via scripts.", skills: ["Jamf Pro", "MDM", "Scripting", "macOS"] },
+            { id: 107, title: "ZTNA & Jamf Protect", cat: "Tut Tut", icon: "fa-solid fa-shield-halved text-red-500", desc: "Mise en place d'une architecture Zero Trust et analyse de sécurité continue des terminaux avec Jamf Protect.", skills: ["Jamf Protect", "ZTNA", "Cybersécurité", "Zero Trust"] }
         ];
 
         const container = document.getElementById('minor-projects-container');

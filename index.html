@@ -260,20 +260,25 @@
 
                     <!-- PROJET 2 -->
                     <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group" onclick="showProjectDetail(2)">
-                        <div class="h-56 relative overflow-hidden bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1562504208-03d85cc8c23e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Itway" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80"></div>
-                            <div class="absolute bottom-4 left-4 right-4 text-white">
+                        <div class="h-56 relative overflow-hidden bg-slate-800">
+                            <!-- Dégradé de fond et effet au survol -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-90"></div>
+                            <div class="absolute inset-0 bg-emerald-500 opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
+                            
+                            <!-- Icône décorative pour habiller le fond vide -->
+                            <i class="fa-solid fa-shield-halved absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-8xl text-slate-700 opacity-50 group-hover:scale-110 transition-transform duration-500"></i>
+
+                            <div class="absolute bottom-4 left-4 right-4 text-white z-10">
                                 <span class="bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider mb-2 inline-block">Projet Majeur</span>
-                                <h3 class="text-xl font-bold leading-tight">Projet Itway (Infrastructure & Réseau)</h3>
+                                <h3 class="text-xl font-bold leading-tight">ZTNA & Jamf Protect</h3>
                             </div>
                         </div>
                         <div class="p-6 flex-1 flex flex-col">
-                            <p class="text-sm text-slate-600 mb-4 flex-1">Conception, déploiement et sécurisation d'une infrastructure réseau complète (VLAN, Routage, Pare-feu) dans le cadre de ma formation.</p>
+                            <p class="text-sm text-slate-600 mb-4 flex-1">Mise en place d'une architecture Zero Trust et analyse de sécurité continue des terminaux avec Jamf Protect chez Tut Tut.</p>
                             <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Infrastructure</span>
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">VLAN</span>
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Sécurité</span>
+                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Jamf Protect</span>
+                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">ZTNA</span>
+                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Cybersécurité</span>
                             </div>
                             <button class="w-full bg-slate-800 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-colors text-sm flex justify-center items-center gap-2">
                                 Lire l'étude de cas <i class="fa-solid fa-chevron-right"></i>
@@ -308,63 +313,13 @@
 
             <!-- VUE DÉTAILLÉE : PROJET 2 -->
             <div id="project-detail-2" class="hidden animate-fadeIn max-w-7xl mx-auto py-8">
-                <button onclick="hideProjectDetail()" class="flex items-center gap-2 text-slate-500 hover:text-emerald-600 mb-8 font-medium transition-colors"><i class="fa-solid fa-arrow-left"></i> Retour aux projets</button>
+                <button onclick="hideProjectDetail()" class="flex items-center gap-2 text-slate-500 hover:text-emerald-600 mb-8 font-medium transition-colors">
+                    <i class="fa-solid fa-arrow-left"></i> Retour aux projets
+                </button>
                 <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
-                    <h1 class="text-3xl font-extrabold text-slate-900 mb-6">Projet Itway (Infrastructure & Réseau)</h1>
-                    <p class="text-slate-600 mb-4">Détails du projet académique : Conception et sécurisation de l'infrastructure réseau, segmentation par VLAN et règles de pare-feu.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========================================================= -->
-        <!-- VEILLE TECHNOLOGIQUE -->
-        <!-- ========================================================= -->
-        <section id="veille" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-16">
-            <div class="text-center mb-12">
-                <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-600 font-bold px-4 py-2 rounded-full mb-6 border border-emerald-100">
-                    <i class="fa-solid fa-rss"></i> Épreuve E4 - Veille Informatique
-                </div>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">L'évolution de la <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Cybersécurité</span> dans les réseaux</h2>
-                <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                    Dans un contexte où les attaques se multiplient, ma veille technologique se concentre sur la sécurisation des architectures et les nouvelles normes de protection.
-                </p>
-            </div>
-
-            <!-- TABLEAU METHODOLOGIE DE VEILLE -->
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 mb-16">
-                <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-3 border-b border-slate-100 pb-4">
-                    <i class="fa-solid fa-magnifying-glass-chart text-emerald-500"></i> Méthodologie & Outils de Veille
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-stone-50 p-6 rounded-xl border border-slate-100 hover:shadow-md transition-all">
-                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center mb-4 text-xl">
-                            <i class="fa-solid fa-crosshairs"></i>
-                        </div>
-                        <h4 class="font-bold text-slate-800 mb-2">1. Ciblage & Thème</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">Je me concentre sur les <strong>vulnérabilités réseaux</strong> (LAN/WLAN), les failles matérielles (Fortinet, Cisco) et les normes européennes (NIS 2).</p>
-                    </div>
-                    <div class="bg-stone-50 p-6 rounded-xl border border-slate-100 hover:shadow-md transition-all">
-                        <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-lg flex items-center justify-center mb-4 text-xl">
-                            <i class="fa-solid fa-filter"></i>
-                        </div>
-                        <h4 class="font-bold text-slate-800 mb-2">2. Outils de Collecte</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">J'utilise des agrégateurs de <strong>flux RSS (Feedly, Inoreader)</strong> et des alertes par mots-clés Google pour centraliser l'information automatiquement.</p>
-                    </div>
-                    <div class="bg-stone-50 p-6 rounded-xl border border-slate-100 hover:shadow-md transition-all">
-                        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4 text-xl">
-                            <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <h4 class="font-bold text-slate-800 mb-2">3. Traitement & Sources</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">Tri hebdomadaire des alertes officielles (<strong>CERT-FR, ANSSI</strong>), des blogs spécialisés (<strong>IT-Connect</strong>) et des forums (Reddit r/sysadmin).</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Flux RSS -->
-            <div id="rss-container" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                <div class="col-span-1 md:col-span-3 text-center py-10 text-slate-400">
-                    <i class="fa-solid fa-circle-notch fa-spin text-3xl mb-3"></i>
-                    <p>Récupération des derniers articles en cours...</p>
+                    <h1 class="text-3xl font-extrabold text-slate-900 mb-6">ZTNA & Jamf Protect</h1>
+                    <p class="text-slate-600 mb-4">Détails du projet chez Tut Tut : Mise en place d'une architecture Zero Trust et analyse de sécurité continue des terminaux avec Jamf Protect.</p>
+                    <!-- Contenu détaillé à ajouter si besoin -->
                 </div>
             </div>
         </section>
@@ -478,6 +433,7 @@
             <div class="p-6">
                 <div class="mb-4">
                     <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">Contexte / Description</span>
+                    <!-- Remplacement par innerHTML pour afficher le lien cliquable -->
                     <p id="modal-desc" class="text-sm text-slate-600 mt-2 leading-relaxed"></p>
                 </div>
                 <div class="mt-6 pt-4 border-t border-slate-100">
@@ -532,8 +488,7 @@
 
         const minorProjects = [
             { id: 101, title: "Création du Portefolio numérique", cat: "Personnel", icon: "fa-solid fa-laptop-code text-indigo-500", desc: "Conception et développement d'un portfolio web interactif pour présenter mes compétences et réalisations lors de l'épreuve E4.", skills: ["HTML/CSS", "JavaScript", "Développement Web"] },
-            { id: 102, title: "Projet Itway (Infrastructure & Réseau)", cat: "Formation", icon: "fa-solid fa-network-wired text-blue-500", desc: "Conception, déploiement et sécurisation d'une infrastructure réseau complète (VLAN, Routage, Pare-feu) dans le cadre du projet Itway.", skills: ["Infrastructure", "Réseau", "VLAN", "Sécurité"] },
-            { id: 103, title: "Mise en place d'une solution de Supervision", cat: "Formation", icon: "fa-solid fa-desktop text-purple-500", desc: "Déploiement d'un outil de supervision pour surveiller l'état de santé du réseau et des serveurs en temps réel.", skills: ["Supervision", "Monitoring", "Alertes"] },
+            { id: 102, title: "Projet Itway (Infrastructure & Réseau)", cat: "Formation", icon: "fa-solid fa-network-wired text-blue-500", desc: "Conception, déploiement et sécurisation d'une infrastructure réseau complète (VLAN, Routage, Pare-feu) dans le cadre du projet Itway.<br><br><a href='Projet Itway.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Infrastructure", "Réseau", "VLAN", "Sécurité"] },
             { id: 104, title: "Ticketing et Support de proximité N1/N2 (macOS, O365)", cat: "Tut Tut", icon: "fa-solid fa-headset text-amber-500", desc: "Assistance technique aux utilisateurs, résolution d'incidents matériels et logiciels sous environnement Apple et Microsoft 365.", skills: ["Support", "macOS", "Microsoft 365"] },
             { id: 105, title: "Gestion des comptes utilisateurs (AD, M365) et Bitwarden", cat: "Tut Tut", icon: "fa-solid fa-key text-teal-500", desc: "Création et gestion sécurisée des identités et accès (IAM) avec Active Directory, Microsoft 365 et le gestionnaire de mots de passe Bitwarden.", skills: ["IAM", "Active Directory", "Bitwarden"] },
             { id: 106, title: "Migration MDM Jamf Pro & Automatisation", cat: "Tut Tut", icon: "fa-solid fa-mobile-screen text-emerald-600", desc: "Déploiement de la solution MDM Jamf Pro pour centraliser la gestion et la sécurité du parc Apple, avec automatisation via scripts.", skills: ["Jamf Pro", "MDM", "Scripting", "macOS"] },
@@ -560,7 +515,7 @@
         function openModal(data) {
             document.getElementById('modal-title').textContent = data.title;
             document.getElementById('modal-icon').className = data.icon;
-            document.getElementById('modal-desc').textContent = data.desc;
+            document.getElementById('modal-desc').innerHTML = data.desc;
             const skillsDiv = document.getElementById('modal-skills');
             skillsDiv.innerHTML = '';
             data.skills.forEach(s => {

@@ -106,12 +106,6 @@
                                 <div class="w-64 h-64 lg:w-96 lg:h-96 bg-white rounded-full border-8 border-emerald-50 shadow-xl flex items-center justify-center relative overflow-hidden group">
                                     <img src="HUGO.jpg" alt="Photo de Hugo Tartrat" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                                     <div class="absolute inset-0 bg-emerald-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
-                                    <div class="absolute top-8 left-8 bg-white p-3 rounded-xl shadow-lg animate-bounceSlow border border-slate-100 z-10">
-                                        <i class="fa-solid fa-server text-2xl text-emerald-500"></i>
-                                    </div>
-                                    <div class="absolute bottom-12 right-8 bg-white p-3 rounded-xl shadow-lg animate-bounceSlower border border-slate-100 z-10">
-                                        <i class="fa-solid fa-shield-virus text-2xl text-teal-500"></i>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -228,15 +222,15 @@
                     </p>
                     
                     <!-- Bouton pour télécharger le fichier officiel -->
-                    <a href="Tableau_Synthese_E5_Hugo_Tartrat.ods" download="Tableau_Synthese_E5_Hugo_Tartrat.ods" class="inline-flex items-center gap-3 bg-slate-900 hover:bg-emerald-600 text-white px-8 py-5 rounded-2xl font-bold transition-all shadow-xl hover:shadow-emerald-500/30 hover:-translate-y-1 text-lg mb-8">
-                        <i class="fa-solid fa-file-arrow-down text-2xl"></i> Télécharger mon Tableau E5
+                    <a href="Tableau_de_Synthese_E5_Hugo_Tartrat.pdf" download="Tableau_de_Synthese_E5_Hugo_Tartrat.pdf" class="inline-flex items-center gap-3 bg-slate-900 hover:bg-emerald-600 text-white px-8 py-5 rounded-2xl font-bold transition-all shadow-xl hover:shadow-emerald-500/30 hover:-translate-y-1 text-lg mb-8">
+                        <i class="fa-solid fa-file-pdf text-2xl"></i> Télécharger mon Tableau E5
                     </a>
                 </div>
 
                 <!-- CARTE DES PROJETS MAJEURS -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
                     <!-- PROJET 1 -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group" onclick="showProjectDetail(1)">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group" onclick="window.open('Migration MDM Jamf Pro &amp; Automatisation.pdf', '_blank')">
                         <div class="h-56 relative overflow-hidden bg-slate-100">
                             <img src="https://images.unsplash.com/photo-1544197150-b99a580bbcbf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Jamf" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80"></div>
@@ -252,14 +246,14 @@
                                 <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">MDM</span>
                                 <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Automatisation</span>
                             </div>
-                            <button class="w-full bg-slate-800 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-colors text-sm flex justify-center items-center gap-2">
-                                Lire l'étude de cas <i class="fa-solid fa-chevron-right"></i>
-                            </button>
+                            <span class="w-full bg-slate-800 group-hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-colors text-sm flex justify-center items-center gap-2">
+                                Ouvrir la documentation PDF <i class="fa-solid fa-file-pdf"></i>
+                            </span>
                         </div>
                     </div>
 
                     <!-- PROJET 2 -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group" onclick="showProjectDetail(2)">
+                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group" onclick="window.open('ZTNA &amp; Jamf Protect.pdf', '_blank')">
                         <div class="h-56 relative overflow-hidden bg-slate-800">
                             <!-- Dégradé de fond et effet au survol -->
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-90"></div>
@@ -280,9 +274,9 @@
                                 <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">ZTNA</span>
                                 <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Cybersécurité</span>
                             </div>
-                            <button class="w-full bg-slate-800 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-colors text-sm flex justify-center items-center gap-2">
-                                Lire l'étude de cas <i class="fa-solid fa-chevron-right"></i>
-                            </button>
+                            <span class="w-full bg-slate-800 group-hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-colors text-sm flex justify-center items-center gap-2">
+                                Ouvrir la documentation PDF <i class="fa-solid fa-file-pdf"></i>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -551,12 +545,12 @@
         }
 
         const minorProjects = [
-            { id: 101, title: "Création du Portefolio numérique", cat: "Personnel", icon: "fa-solid fa-laptop-code text-indigo-500", desc: "Conception et développement d'un portfolio web interactif pour présenter mes compétences et réalisations lors de l'épreuve E5.", skills: ["HTML/CSS", "JavaScript", "Développement Web"] },
+            { id: 101, title: "Création du Portefolio numérique", cat: "Personnel", icon: "fa-solid fa-laptop-code text-indigo-500", desc: "Conception et développement d'un portfolio web interactif pour présenter mes compétences et réalisations lors de l'épreuve E5.<br><br><a href='Portfolio.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["HTML/CSS", "JavaScript", "Développement Web"] },
             { id: 102, title: "Projet Itway (Infrastructure & Réseau)", cat: "Formation", icon: "fa-solid fa-network-wired text-blue-500", desc: "Conception, déploiement et sécurisation d'une infrastructure réseau complète (VLAN, Routage, Pare-feu) dans le cadre du projet Itway.<br><br><a href='Projet Itway.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Infrastructure", "Réseau", "VLAN", "Sécurité"] },
-            { id: 104, title: "Ticketing et Support de proximité N1/N2 (macOS, O365)", cat: "Tut Tut", icon: "fa-solid fa-headset text-amber-500", desc: "Assistance technique aux utilisateurs, résolution d'incidents matériels et logiciels sous environnement Apple et Microsoft 365.", skills: ["Support", "macOS", "Microsoft 365"] },
-            { id: 105, title: "Gestion des comptes utilisateurs (AD, M365) et Bitwarden", cat: "Tut Tut", icon: "fa-solid fa-key text-teal-500", desc: "Création et gestion sécurisée des identités et accès (IAM) avec Active Directory, Microsoft 365 et le gestionnaire de mots de passe Bitwarden.", skills: ["IAM", "Active Directory", "Bitwarden"] },
-            { id: 106, title: "Migration MDM Jamf Pro & Automatisation", cat: "Tut Tut", icon: "fa-solid fa-mobile-screen text-emerald-600", desc: "Déploiement de la solution MDM Jamf Pro pour centraliser la gestion et la sécurité du parc Apple, avec automatisation via scripts.", skills: ["Jamf Pro", "MDM", "Scripting", "macOS"] },
-            { id: 107, title: "ZTNA & Jamf Protect", cat: "Tut Tut", icon: "fa-solid fa-shield-halved text-red-500", desc: "Mise en place d'une architecture Zero Trust et analyse de sécurité continue des terminaux avec Jamf Protect.", skills: ["Jamf Protect", "ZTNA", "Cybersécurité", "Zero Trust"] }
+            { id: 104, title: "Ticketing et Support de proximité N1/N2 (macOS, O365)", cat: "Tut Tut", icon: "fa-solid fa-headset text-amber-500", desc: "Assistance technique aux utilisateurs, résolution d'incidents matériels et logiciels sous environnement Apple et Microsoft 365.<br><br><a href='Ticketing et Support de proximité N1 et N2.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Support", "macOS", "Microsoft 365"] },
+            { id: 105, title: "Gestion des comptes utilisateurs (AD, M365) et Bitwarden", cat: "Tut Tut", icon: "fa-solid fa-key text-teal-500", desc: "Création et gestion sécurisée des identités et accès (IAM) avec Active Directory, Microsoft 365 et le gestionnaire de mots de passe Bitwarden.<br><br><a href='Gestion des comptes utilisateurs et Bitwarden.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["IAM", "Active Directory", "Bitwarden"] },
+            { id: 106, title: "Migration MDM Jamf Pro & Automatisation", cat: "Tut Tut", icon: "fa-solid fa-mobile-screen text-emerald-600", desc: "Déploiement de la solution MDM Jamf Pro pour centraliser la gestion et la sécurité du parc Apple, avec automatisation via scripts.<br><br><a href='Migration MDM Jamf Pro & Automatisation.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Jamf Pro", "MDM", "Scripting", "macOS"] },
+            { id: 107, title: "ZTNA & Jamf Protect", cat: "Tut Tut", icon: "fa-solid fa-shield-halved text-red-500", desc: "Mise en place d'une architecture Zero Trust et analyse de sécurité continue des terminaux avec Jamf Protect.<br><br><a href='ZTNA & Jamf Protect.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Jamf Protect", "ZTNA", "Cybersécurité", "Zero Trust"] }
         ];
 
         const container = document.getElementById('minor-projects-container');

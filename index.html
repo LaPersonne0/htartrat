@@ -65,7 +65,7 @@
     <main class="flex-1">
 
         <!-- ========================================================= -->
-        <!-- ACCUEIL (Design Centré avec photo ronde) -->
+        <!-- ACCUEIL -->
         <!-- ========================================================= -->
         <section id="home" class="animate-fadeIn relative overflow-hidden bg-white min-h-[calc(100vh-64px)] flex items-center justify-center py-20">
             <div class="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:24px_24px] opacity-60"></div>
@@ -113,7 +113,7 @@
         </section>
 
         <!-- ========================================================= -->
-        <!-- À PROPOS (Design Moderne Listes & Tickets) -->
+        <!-- À PROPOS -->
         <!-- ========================================================= -->
         <section id="presentation" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-16">
             <div class="flex flex-col lg:flex-row gap-12 items-center mb-24">
@@ -122,8 +122,8 @@
                     <p class="text-lg text-slate-600 leading-relaxed mb-8">
                         Étudiant en BTS SIO (option SISR) et fort d'une solide expérience en alternance, je me spécialise dans l'administration d'infrastructures informatiques modernes. Maîtrisant le déploiement d'architectures sécurisées (Zero Trust) et la gestion de parcs (MDM), j'ai pour ambition de poursuivre mon évolution dans la <strong class="text-slate-900">cybersécurité</strong>.
                     </p>
-                    <a href="CV_Hugo_Tartrat.pdf" download="CV_Hugo_Tartrat.pdf" class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-200 px-8 py-4 rounded-xl font-bold hover:bg-emerald-500 hover:text-white transition-all shadow-sm group">
-                        <i class="fa-solid fa-file-arrow-down text-xl group-hover:-translate-y-1 transition-transform"></i> Télécharger mon CV
+                    <a href="./CV_Hugo_Tartrat.pdf" target="_blank" class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-200 px-8 py-4 rounded-xl font-bold hover:bg-emerald-500 hover:text-white transition-all shadow-sm group">
+                        <i class="fa-solid fa-file-pdf text-xl group-hover:-translate-y-1 transition-transform"></i> Ouvrir mon CV
                     </a>
                 </div>
                 
@@ -279,12 +279,11 @@
         </section>
 
         <!-- ========================================================= -->
-        <!-- PROJETS (Design Éditorial) -->
+        <!-- PROJETS -->
         <!-- ========================================================= -->
         <section id="projets" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-16 relative">
             <div id="projects-grid-view">
                 
-                <!-- EN-TÊTE ASYMÉTRIQUE -->
                 <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center lg:items-end mb-16 border-b border-slate-200 pb-12">
                     <div class="lg:w-2/3 text-center lg:text-left">
                         <div class="inline-flex items-center gap-2 bg-slate-50 text-emerald-600 font-bold px-4 py-2 rounded-lg mb-6 border border-slate-200 shadow-sm">
@@ -296,17 +295,15 @@
                         </p>
                     </div>
                     <div class="lg:w-1/3 flex justify-center lg:justify-end w-full">
-                        <a href="Tableau_de_Synthese_E5_Hugo_Tartrat.pdf" download="Tableau_de_Synthese_E5_Hugo_Tartrat.pdf" class="inline-flex items-center gap-3 bg-slate-900 hover:bg-emerald-600 text-white px-8 py-5 rounded-2xl font-bold transition-all shadow-xl hover:shadow-emerald-500/30 hover:-translate-y-1 w-full sm:w-auto justify-center">
+                        <a href="./Tableau_de_Synthese_E5_Hugo_Tartrat.pdf" target="_blank" class="inline-flex items-center gap-3 bg-slate-900 hover:bg-emerald-600 text-white px-8 py-5 rounded-2xl font-bold transition-all shadow-xl hover:shadow-emerald-500/30 hover:-translate-y-1 w-full sm:w-auto justify-center">
                             <i class="fa-solid fa-file-pdf text-2xl"></i> Tableau E5
                         </a>
                     </div>
                 </div>
 
-                <!-- CARTES MAJEURES (Format Alterné Editorial) -->
                 <div class="space-y-8 mb-24">
                     
-                    <!-- PROJET 1 : Image à gauche -->
-                    <div class="bg-white rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(16,185,129,0.12)] transition-all duration-500 flex flex-col lg:flex-row overflow-hidden group cursor-pointer" onclick="window.open('Migration MDM Jamf Pro &amp; Automatisation.pdf', '_blank')">
+                    <div class="bg-white rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(16,185,129,0.12)] transition-all duration-500 flex flex-col lg:flex-row overflow-hidden group cursor-pointer" onclick="window.open('./Migration MDM Jamf Pro & Automatisation.pdf', '_blank')">
                         <div class="lg:w-5/12 relative min-h-[250px] lg:min-h-full overflow-hidden bg-slate-100">
                             <img src="https://images.unsplash.com/photo-1544197150-b99a580bbcbf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Jamf" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90">
                             <div class="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-transparent"></div>
@@ -328,8 +325,7 @@
                         </div>
                     </div>
 
-                    <!-- PROJET 2 : Image à droite (inversé) -->
-                    <div class="bg-white rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(20,184,166,0.12)] transition-all duration-500 flex flex-col lg:flex-row-reverse overflow-hidden group cursor-pointer" onclick="window.open('ZTNA &amp; Jamf Protect.pdf', '_blank')">
+                    <div class="bg-white rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(20,184,166,0.12)] transition-all duration-500 flex flex-col lg:flex-row-reverse overflow-hidden group cursor-pointer" onclick="window.open('./ZTNA & Jamf Protect.pdf', '_blank')">
                         <div class="lg:w-5/12 relative min-h-[250px] lg:min-h-full overflow-hidden bg-slate-900 flex items-center justify-center">
                             <div class="absolute inset-0 bg-gradient-to-bl from-teal-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             <i class="fa-solid fa-shield-halved text-8xl text-slate-700 opacity-50 group-hover:scale-110 transition-transform duration-700 group-hover:text-teal-500/40"></i>
@@ -352,7 +348,6 @@
                     </div>
                 </div>
 
-                <!-- TABLEAU DES RÉALISATIONS MINEURES -->
                 <div class="pt-12">
                     <div class="flex items-center gap-4 mb-10">
                         <h3 class="text-2xl font-bold text-slate-900">Autres Réalisations</h3>
@@ -364,13 +359,11 @@
         </section>
 
         <!-- ========================================================= -->
-        <!-- VEILLE TECHNOLOGIQUE (Design Moderne) -->
+        <!-- VEILLE TECHNOLOGIQUE -->
         <!-- ========================================================= -->
         <section id="veille" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-16">
             
-            <!-- EN-TÊTE & IMPACT (Design Split) -->
             <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-20">
-                <!-- Titre & Intro -->
                 <div class="lg:w-1/2 flex flex-col justify-center">
                     <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-600 font-bold px-4 py-2 rounded-lg mb-6 border border-emerald-100 shadow-sm w-fit">
                         <i class="fa-solid fa-radar"></i> Épreuve E5 - Veille
@@ -383,7 +376,6 @@
                     </p>
                 </div>
                 
-                <!-- Carte Impact Professionnel (Dark Mode) -->
                 <div class="lg:w-1/2 bg-slate-900 rounded-[2rem] p-8 lg:p-10 relative overflow-hidden shadow-2xl border border-slate-800 flex flex-col justify-center">
                     <i class="fa-solid fa-quote-right absolute -top-4 -right-4 text-8xl text-emerald-500/10 rotate-12"></i>
                     <h3 class="text-xl font-bold mb-4 text-emerald-400 flex items-center gap-3 relative z-10">
@@ -395,7 +387,6 @@
                 </div>
             </div>
 
-            <!-- MÉTHODOLOGIE -->
             <div class="mb-24">
                 <div class="flex items-center gap-4 mb-10">
                     <h3 class="text-2xl font-bold text-slate-900">Ma Méthodologie</h3>
@@ -421,7 +412,6 @@
                 </div>
             </div>
 
-            <!-- FLUX RSS (ACTUALITÉS) -->
             <div>
                 <div class="flex items-center gap-4 mb-10">
                     <h3 class="text-2xl font-bold text-slate-900"><i class="fa-solid fa-satellite-dish text-emerald-500 mr-2"></i> Flux d'actualités en direct</h3>
@@ -487,9 +477,7 @@
                 <div class="lg:col-span-2 p-10 md:p-12">
                     <h3 class="text-2xl font-bold text-slate-800 mb-8">Formulaire de contact</h3>
                     <form class="space-y-6" onsubmit="submitForm(event)">
-                        <!-- Anti-spam honeypot (caché) pour FormSubmit -->
                         <input type="hidden" name="_captcha" value="false">
-                        
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-sm font-bold text-slate-700 mb-2">Votre nom</label>
@@ -586,12 +574,12 @@
         }
 
         const minorProjects = [
-            { id: 101, title: "Création du Portefolio numérique", cat: "Personnel", icon: "fa-solid fa-laptop-code text-indigo-500", desc: "Conception et développement d'un portfolio web interactif pour présenter mes compétences et réalisations lors de l'épreuve E5.<br><br><a href='Portfolio.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["HTML/CSS", "JavaScript", "Développement Web"] },
-            { id: 102, title: "Projet Itway (Infrastructure & Réseau)", cat: "Formation", icon: "fa-solid fa-network-wired text-blue-500", desc: "Conception, déploiement et sécurisation d'une infrastructure réseau complète (VLAN, Routage, Pare-feu) dans le cadre du projet Itway.<br><br><a href='Projet Itway.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Infrastructure", "Réseau", "VLAN", "Sécurité"] },
-            { id: 104, title: "Ticketing et Support de proximité N1/N2 (macOS, O365)", cat: "Tut Tut", icon: "fa-solid fa-headset text-amber-500", desc: "Assistance technique aux utilisateurs, résolution d'incidents matériels et logiciels sous environnement Apple et Microsoft 365.<br><br><a href='Ticketing et Support de proximité N1 et N2.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Support", "macOS", "Microsoft 365"] },
-            { id: 105, title: "Gestion des comptes utilisateurs (AD, M365) et Bitwarden", cat: "Tut Tut", icon: "fa-solid fa-key text-teal-500", desc: "Création et gestion sécurisée des identités et accès (IAM) avec Active Directory, Microsoft 365 et le gestionnaire de mots de passe Bitwarden.<br><br><a href='Gestion des comptes utilisateurs et Bitwarden.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["IAM", "Active Directory", "Bitwarden"] },
-            { id: 106, title: "Migration MDM Jamf Pro & Automatisation", cat: "Tut Tut", icon: "fa-solid fa-mobile-screen text-emerald-600", desc: "Déploiement de la solution MDM Jamf Pro pour centraliser la gestion et la sécurité du parc Apple, avec automatisation via scripts.<br><br><a href='Migration MDM Jamf Pro & Automatisation.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Jamf Pro", "MDM", "Scripting", "macOS"] },
-            { id: 107, title: "ZTNA & Jamf Protect", cat: "Tut Tut", icon: "fa-solid fa-shield-halved text-red-500", desc: "Mise en place d'une architecture Zero Trust et analyse de sécurité continue des terminaux avec Jamf Protect.<br><br><a href='ZTNA & Jamf Protect.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Jamf Protect", "ZTNA", "Cybersécurité", "Zero Trust"] }
+            { id: 101, title: "Création du Portefolio numérique", cat: "Personnel", icon: "fa-solid fa-laptop-code text-indigo-500", desc: "Conception et développement d'un portfolio web interactif pour présenter mes compétences et réalisations lors de l'épreuve E5.<br><br><a href='./Portfolio.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["HTML/CSS", "JavaScript", "Développement Web"] },
+            { id: 102, title: "Projet Itway (Infrastructure & Réseau)", cat: "Formation", icon: "fa-solid fa-network-wired text-blue-500", desc: "Conception, déploiement et sécurisation d'une infrastructure réseau complète (VLAN, Routage, Pare-feu) dans le cadre du projet Itway.<br><br><a href='./Projet Itway.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Infrastructure", "Réseau", "VLAN", "Sécurité"] },
+            { id: 104, title: "Ticketing et Support de proximité N1/N2 (macOS, O365)", cat: "Tut Tut", icon: "fa-solid fa-headset text-amber-500", desc: "Assistance technique aux utilisateurs, résolution d'incidents matériels et logiciels sous environnement Apple et Microsoft 365.<br><br><a href='./Ticketing et Support de proximité N1 et N2.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Support", "macOS", "Microsoft 365"] },
+            { id: 105, title: "Gestion des comptes utilisateurs (AD, M365) et Bitwarden", cat: "Tut Tut", icon: "fa-solid fa-key text-teal-500", desc: "Création et gestion sécurisée des identités et accès (IAM) avec Active Directory, Microsoft 365 et le gestionnaire de mots de passe Bitwarden.<br><br><a href='./Gestion des comptes utilisateurs et Bitwarden.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["IAM", "Active Directory", "Bitwarden"] },
+            { id: 106, title: "Migration MDM Jamf Pro & Automatisation", cat: "Tut Tut", icon: "fa-solid fa-mobile-screen text-emerald-600", desc: "Déploiement de la solution MDM Jamf Pro pour centraliser la gestion et la sécurité du parc Apple, avec automatisation via scripts.<br><br><a href='./Migration MDM Jamf Pro & Automatisation.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Jamf Pro", "MDM", "Scripting", "macOS"] },
+            { id: 107, title: "ZTNA & Jamf Protect", cat: "Tut Tut", icon: "fa-solid fa-shield-halved text-red-500", desc: "Mise en place d'une architecture Zero Trust et analyse de sécurité continue des terminaux avec Jamf Protect.<br><br><a href='./ZTNA & Jamf Protect.pdf' target='_blank' class='inline-flex items-center gap-2 text-emerald-600 hover:text-emerald-800 font-bold'><i class='fa-solid fa-file-pdf'></i> Voir la documentation</a>", skills: ["Jamf Protect", "ZTNA", "Cybersécurité", "Zero Trust"] }
         ];
 
         const container = document.getElementById('minor-projects-container');

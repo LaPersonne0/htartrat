@@ -36,8 +36,8 @@
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div onclick="switchTab('home')" class="font-bold text-xl tracking-wider cursor-pointer flex items-center gap-2 hover:text-emerald-600 transition-colors">
-                    <i class="fa-solid fa-server text-emerald-500"></i>
-                    <span>PORTFOLIO<span class="text-emerald-500">.SISR</span></span>
+                    <i class="fa-solid fa-shield-halved text-emerald-500"></i>
+                    <span>PORTFOLIO</span>
                 </div>
                 <div class="hidden md:flex space-x-8" id="desktop-menu">
                     <button onclick="switchTab('home')" class="nav-btn active text-sm font-bold transition-colors duration-200 border-b-2 border-transparent text-slate-500 hover:text-emerald-600 hover:border-emerald-300 pb-1" data-target="home">ACCUEIL</button>
@@ -65,321 +65,376 @@
     <main class="flex-1">
 
         <!-- ========================================================= -->
-        <!-- ACCUEIL -->
+        <!-- ACCUEIL (Design Centré avec photo ronde) -->
         <!-- ========================================================= -->
-        <section id="home" class="animate-fadeIn">
-            <div class="relative overflow-hidden bg-slate-50 min-h-[calc(100vh-140px)] flex items-center py-20">
-                <div class="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 rounded-full bg-emerald-400 blur-3xl opacity-20"></div>
-                <div class="absolute bottom-0 left-0 -ml-32 -mb-32 w-96 h-96 rounded-full bg-teal-400 blur-3xl opacity-20"></div>
+        <section id="home" class="animate-fadeIn relative overflow-hidden bg-white min-h-[calc(100vh-64px)] flex items-center justify-center py-20">
+            <div class="absolute inset-0 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:24px_24px] opacity-60"></div>
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-full bg-gradient-to-b from-emerald-50/80 to-transparent blur-3xl -z-10"></div>
 
-                <div class="max-w-6xl mx-auto px-4 relative z-10 w-full">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div class="order-2 lg:order-1 text-center lg:text-left">
-                            <div class="inline-flex items-center gap-2 bg-white text-emerald-600 font-bold px-4 py-2 rounded-full mb-6 border border-emerald-100 shadow-sm">
-                                <i class="fa-solid fa-shield-halved"></i> BTS SIO - Option SISR
+            <div class="max-w-4xl mx-auto px-4 relative z-10 w-full flex flex-col items-center text-center">
+
+                <div class="relative w-44 h-44 sm:w-52 sm:h-52 mb-10 group">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-emerald-400 to-teal-300 rounded-full rotate-6 group-hover:rotate-12 transition-transform duration-500 shadow-lg"></div>
+                    <div class="absolute inset-0 bg-gradient-to-bl from-emerald-100 to-teal-50 rounded-full -rotate-3 group-hover:-rotate-6 transition-transform duration-500"></div>
+                    <img src="HUGO.jpg" alt="Photo de Hugo Tartrat" class="absolute inset-0 w-full h-full object-cover rounded-full shadow-xl border-4 border-white z-10 transition-transform duration-500 group-hover:scale-[1.03]">
+                </div>
+
+                <div class="inline-flex items-center gap-2 bg-slate-50 text-emerald-600 font-bold px-5 py-2.5 rounded-full mb-6 border border-slate-200 shadow-sm">
+                    <span class="relative flex h-2.5 w-2.5">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                    </span>
+                    BTS SIO - Option SISR
+                </div>
+
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black mb-6 text-slate-900 tracking-tight leading-tight">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Hugo Tartrat</span>
+                </h1>
+
+                <p class="text-lg sm:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
+                    Issu d'un parcours en BTS SIO (option SISR), j'évolue actuellement en tant qu'Administrateur Systèmes et Réseaux en alternance chez <span class="font-bold text-slate-800">Tut Tut</span>. Mon expertise technique se concentre sur l'administration des infrastructures, la gestion et l'automatisation de parc (MDM), ainsi que le maintien en condition opérationnelle des systèmes.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center mb-12">
+                    <button onclick="switchTab('projets')" class="bg-slate-900 hover:bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-xl hover:shadow-emerald-500/30 flex items-center justify-center gap-3">
+                        Mes Projets <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <button onclick="switchTab('presentation')" class="bg-white text-slate-700 border-2 border-slate-200 hover:border-emerald-400 hover:text-emerald-700 hover:bg-emerald-50 px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
+                        Découvrir mon profil
+                    </button>
+                </div>
+
+                <div class="flex items-center justify-center gap-8 text-slate-400 text-2xl sm:text-3xl">
+                    <a href="https://www.linkedin.com/in/hugo-tartrat-47617a313/" target="_blank" class="hover:text-emerald-500 transition-colors transform hover:-translate-y-1"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/LaPersonne0/htartrat" target="_blank" class="hover:text-slate-800 transition-colors transform hover:-translate-y-1"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:hugotartrat@gmail.com" class="hover:text-emerald-500 transition-colors transform hover:-translate-y-1"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- À PROPOS (Design Moderne Listes & Tickets) -->
+        <!-- ========================================================= -->
+        <section id="presentation" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-16">
+            <div class="flex flex-col lg:flex-row gap-12 items-center mb-24">
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6">Mon <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Parcours</span> & <br/>Expertise</h2>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-8">
+                        Étudiant en BTS SIO (option SISR) et fort d'une solide expérience en alternance, je me spécialise dans l'administration d'infrastructures informatiques modernes. Maîtrisant le déploiement d'architectures sécurisées (Zero Trust) et la gestion de parcs (MDM), j'ai pour ambition de poursuivre mon évolution dans la <strong class="text-slate-900">cybersécurité</strong>.
+                    </p>
+                    <a href="CV_Hugo_Tartrat.pdf" download="CV_Hugo_Tartrat.pdf" class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-200 px-8 py-4 rounded-xl font-bold hover:bg-emerald-500 hover:text-white transition-all shadow-sm group">
+                        <i class="fa-solid fa-file-arrow-down text-xl group-hover:-translate-y-1 transition-transform"></i> Télécharger mon CV
+                    </a>
+                </div>
+                
+                <div class="lg:w-1/2 flex justify-center w-full">
+                    <div class="relative w-full max-w-md aspect-square">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-emerald-100 to-teal-50 rounded-[3rem] rotate-3 opacity-60"></div>
+                        <div class="absolute inset-0 bg-white rounded-[3rem] -rotate-3 border border-slate-100 shadow-xl"></div>
+                        
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 grid grid-cols-2 gap-6 w-3/4">
+                            <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-100 transform -translate-y-4 hover:-translate-y-6 transition-transform duration-300">
+                                <i class="fa-solid fa-server text-3xl text-teal-500 mb-3"></i>
+                                <h3 class="font-bold text-slate-800 text-sm">Systèmes</h3>
                             </div>
-                            <h1 class="text-5xl lg:text-6xl font-extrabold mb-6 text-slate-900 tracking-tight">
-                                Bonjour, je suis <br class="hidden lg:block"/>
-                                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Hugo Tartrat</span>
-                            </h1>
-                            <p class="text-lg lg:text-xl text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                                Technicien informatique en alternance chez <span class="font-bold text-slate-800">Tut Tut</span>. 
-                                J'assure le maintien en condition opérationnelle du parc informatique, l'assistance aux utilisateurs (N1/N2) et je participe à l'administration de notre infrastructure réseau et système pour garantir le bon fonctionnement de nos services de logistique.
-                            </p>
-                            <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                                <button onclick="switchTab('projets')" class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-emerald-500/30 flex items-center justify-center gap-2">
-                                    Mes Projets <i class="fa-solid fa-chevron-right"></i>
-                                </button>
-                                <button onclick="switchTab('presentation')" class="bg-white text-slate-700 border border-slate-200 hover:border-emerald-300 hover:text-emerald-600 hover:bg-emerald-50 px-8 py-4 rounded-xl font-bold transition-all flex items-center justify-center gap-2">
-                                    Découvrir mon profil
-                                </button>
+                            <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-100 transform translate-y-4 hover:translate-y-2 transition-transform duration-300">
+                                <i class="fa-solid fa-network-wired text-3xl text-blue-500 mb-3"></i>
+                                <h3 class="font-bold text-slate-800 text-sm">Réseaux</h3>
                             </div>
-                            <div class="mt-10 flex items-center justify-center lg:justify-start gap-6 text-slate-400 text-2xl">
-                                <a href="https://www.linkedin.com/in/hugo-tartrat-47617a313/" target="_blank" class="hover:text-emerald-500 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="https://github.com/LaPersonne0/htartrat" target="_blank" class="hover:text-slate-800 transition-colors"><i class="fa-brands fa-github"></i></a>
-                                <a href="mailto:hugotartrat@gmail.com" class="hover:text-emerald-500 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                            <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-100 transform translate-x-4 hover:translate-x-2 transition-transform duration-300">
+                                <i class="fa-solid fa-shield-halved text-3xl text-emerald-500 mb-3"></i>
+                                <h3 class="font-bold text-slate-800 text-sm">Sécurité</h3>
+                            </div>
+                            <div class="bg-slate-50 p-6 rounded-2xl shadow-sm border border-slate-100 transform -translate-x-4 hover:-translate-x-6 transition-transform duration-300">
+                                <i class="fa-solid fa-laptop-code text-3xl text-indigo-500 mb-3"></i>
+                                <h3 class="font-bold text-slate-800 text-sm">Support</h3>
                             </div>
                         </div>
-                        <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
-                            <div class="relative">
-                                <div class="absolute inset-0 bg-gradient-to-tr from-emerald-100 to-teal-50 rounded-full scale-110 -z-10"></div>
-                                <div class="w-64 h-64 lg:w-96 lg:h-96 bg-white rounded-full border-8 border-emerald-50 shadow-xl flex items-center justify-center relative overflow-hidden group">
-                                    <img src="HUGO.jpg" alt="Photo de Hugo Tartrat" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                                    <div class="absolute inset-0 bg-emerald-500 opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMPÉTENCES -->
+            <div class="mb-24">
+                <div class="flex items-center gap-4 mb-10">
+                    <h3 class="text-2xl font-bold text-slate-900">Compétences Techniques</h3>
+                    <div class="h-px bg-slate-200 flex-1"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(16,185,129,0.1)] transition-shadow">
+                        <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-2xl text-emerald-600 mb-6"><i class="fa-solid fa-lock"></i></div>
+                        <h4 class="font-bold text-xl text-slate-800 mb-6">Sécurité & Réseau</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 text-slate-600"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>Filtrage ACL (Cisco/OPNSense)</span></li>
+                            <li class="flex items-start gap-3 text-slate-600"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>VLAN / Routage</span></li>
+                            <li class="flex items-start gap-3 text-slate-600"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>Architecture Zero Trust</span></li>
+                            <li class="flex items-start gap-3 text-slate-600"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>VPN / Wireshark</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(20,184,166,0.1)] transition-shadow">
+                        <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center text-2xl text-teal-600 mb-6"><i class="fa-solid fa-users-gear"></i></div>
+                        <h4 class="font-bold text-xl text-slate-800 mb-6">Systèmes & Identités</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 text-slate-600"><i class="fa-solid fa-check text-teal-500 mt-1"></i> <span>Active Directory / Entra ID</span></li>
+                            <li class="flex items-start gap-3 text-slate-600"><i class="fa-solid fa-check text-teal-500 mt-1"></i> <span>Windows Server / Linux</span></li>
+                            <li class="flex items-start gap-3 text-slate-600"><i class="fa-solid fa-check text-teal-500 mt-1"></i> <span>SSO & Bitwarden</span></li>
+                            <li class="flex items-start gap-3 text-slate-600"><i class="fa-solid fa-check text-teal-500 mt-1"></i> <span>Gestion Jamf (MDM)</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(16,185,129,0.1)] transition-shadow">
+                        <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-2xl text-emerald-600 mb-6"><i class="fa-solid fa-gears"></i></div>
+                        <h4 class="font-bold text-xl text-slate-800 mb-6">Outils</h4>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 text-slate-600"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>PowerShell & Bash</span></li>
+                            <li class="flex items-start gap-3 text-slate-600"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>Bitwarden & M365</span></li>
+                            <li class="flex items-start gap-3 text-slate-600"><i class="fa-solid fa-check text-emerald-500 mt-1"></i> <span>Ticketing Jira</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARCOURS -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Colonne Expériences -->
+                <div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center"><i class="fa-solid fa-briefcase"></i></div>
+                        <h3 class="text-2xl font-bold text-slate-900">Expériences</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <!-- Tut Tut -->
+                        <div class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(16,185,129,0.1)] transition-shadow flex flex-col sm:flex-row gap-5">
+                            <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-500 shrink-0 text-xl"><i class="fa-solid fa-building"></i></div>
+                            <div class="flex-1">
+                                <div class="flex flex-wrap justify-between items-start gap-2 mb-1">
+                                    <h4 class="font-bold text-slate-900 text-lg">Tut Tut</h4>
+                                    <span class="bg-slate-50 text-slate-500 text-xs font-bold px-2.5 py-1 rounded-md border border-slate-100">08/2024 - Présent</span>
+                                </div>
+                                <p class="text-emerald-600 font-bold text-sm mb-4">Admin Systèmes, Réseaux et Sécurité (Alternance)</p>
+                                <ul class="space-y-2 text-sm text-slate-600 mb-5">
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-emerald-400 mt-1"></i><span>Gestion avancée du parc macOS via MDM (Jamf Pro) et automatisation par scripts.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-emerald-400 mt-1"></i><span>Déploiement d'une architecture Zero Trust (ZTNA et Jamf Protect).</span></li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-emerald-400 mt-1"></i><span>Gestion des identités IAM (Microsoft Entra ID) et Bitwarden.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-emerald-400 mt-1"></i><span>Support utilisateurs N1/N2 et gestion des tickets sous Jira.</span></li>
+                                </ul>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-1 rounded">Jamf</span>
+                                    <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-1 rounded">macOS</span>
+                                    <span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-1 rounded">Entra ID</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- ========================================================= -->
-        <!-- À PROPOS -->
-        <!-- ========================================================= -->
-        <section id="presentation" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-16">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">À Propos de Mon Profil</h2>
-                <div class="w-20 h-1.5 bg-emerald-500 mx-auto rounded-full mb-6"></div>
-                <p class="text-lg text-stone-600 max-w-3xl mx-auto leading-relaxed">
-                    Technicien Systèmes et Réseaux issu d'un BTS SIO, avec une expérience solide en alternance. Fort d'une maîtrise pratique de l'administration d'infrastructures et du déploiement de solutions Zero Trust, je m'oriente aujourd'hui vers la <strong>cybersécurité</strong> (sécurisation des accès, durcissement des systèmes et automatisation).
-                </p>
-                <div class="mt-8">
-                    <a href="CV_Hugo_Tartrat.pdf" download="CV_Hugo_Tartrat.pdf" class="inline-flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-xl font-bold hover:bg-emerald-500 transition-all shadow-lg hover:-translate-y-1">
-                        <i class="fa-solid fa-download"></i> Télécharger mon CV (PDF)
-                    </a>
-                </div>
-            </div>
-
-            <div class="mb-20">
-                <h3 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-3">
-                    <i class="fa-solid fa-terminal text-emerald-500"></i> Mes Compétences Techniques
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4 text-xl"><i class="fa-solid fa-shield-halved text-emerald-600"></i></div>
-                        <h4 class="font-bold text-lg text-slate-800 mb-4">Sécurité & Réseau</h4>
-                        <div class="flex flex-wrap gap-2 text-xs font-medium text-stone-700">
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Filtrage ACL (Cisco/OPNSense)</span>
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">VLAN / Routage</span>
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Architecture Zero Trust</span>
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">VPN / Wireshark</span>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center mb-4 text-xl"><i class="fa-solid fa-server text-teal-600"></i></div>
-                        <h4 class="font-bold text-lg text-slate-800 mb-4">Systèmes & Identités</h4>
-                        <div class="flex flex-wrap gap-2 text-xs font-medium text-stone-700">
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Active Directory / Entra ID</span>
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Windows Server / Linux</span>
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">SSO & Bitwarden</span>
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Gestion de terminaux (Jamf)</span>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
-                        <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center mb-4 text-xl"><i class="fa-solid fa-code text-emerald-600"></i></div>
-                        <h4 class="font-bold text-lg text-slate-800 mb-4">Automatisation & Outils</h4>
-                        <div class="flex flex-wrap gap-2 text-xs font-medium text-stone-700">
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">PowerShell</span>
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Bash / Scripts</span>
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">SharePoint / Intranet</span>
-                            <span class="bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">Support N1/N2</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Colonne Scolarité -->
                 <div>
-                    <h3 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-3 pb-4 border-b border-slate-200"><i class="fa-solid fa-briefcase text-amber-500"></i> Parcours Pro</h3>
-                    <div class="space-y-8 border-l-2 border-slate-200 ml-4 pl-6 relative">
-                        <div class="relative">
-                            <div class="absolute -left-[35px] bg-emerald-500 w-4 h-4 rounded-full border-4 border-white"></div>
-                            <span class="text-emerald-600 font-bold text-sm">Tut Tut (Avignon)</span> <span class="text-slate-400 text-xs font-bold ml-2">08/2024 - Présent</span>
-                            <h4 class="font-bold text-slate-800 mt-1 mb-2">Administrateur Systèmes, Réseaux et Sécurité (Alternance)</h4>
-                            <p class="text-sm text-slate-600">Déploiement d'une architecture Zero Trust, administration sécurisée via Jamf, intégration SSO (Entra ID) et pilotage de l'Intranet SharePoint.</p>
-                        </div>
-                        <div class="relative">
-                            <div class="absolute -left-[35px] bg-slate-300 w-4 h-4 rounded-full border-4 border-white"></div>
-                            <span class="text-slate-600 font-bold text-sm">CCI Vaucluse (Avignon)</span> <span class="text-slate-400 text-xs font-bold ml-2">2024 - 2026</span>
-                            <h4 class="font-bold text-slate-800 mt-1 mb-2">Projets d'Infrastructure (BTS SIO)</h4>
-                            <p class="text-sm text-slate-600">Conception et sécurisation d'architectures simulées. Mise en place de pare-feu (OPNSense), durcissement de serveurs et analyse de trafic via Wireshark.</p>
-                        </div>
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3 class="text-2xl font-bold text-slate-900">Scolarité</h3>
                     </div>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-bold text-slate-800 mb-8 flex items-center gap-3 pb-4 border-b border-slate-200"><i class="fa-solid fa-graduation-cap text-teal-500"></i> Formation</h3>
-                    <div class="space-y-8 border-l-2 border-slate-200 ml-4 pl-6 relative">
-                        <div class="relative">
-                            <div class="absolute -left-[35px] bg-teal-500 w-4 h-4 rounded-full border-4 border-white"></div>
-                            <span class="text-teal-600 font-bold text-sm">Campus de la CCI de Vaucluse</span> <span class="text-slate-400 text-xs font-bold ml-2">2024 - 2026</span>
-                            <h4 class="font-bold text-slate-800 mt-1 mb-2">BTS SIO (Services Informatiques aux Organisations)</h4>
-                            <p class="text-sm text-slate-600">Formation axée sur les solutions d'infrastructure, systèmes et réseaux avec une spécialisation en sécurité.</p>
-                        </div>
-                        <div class="relative">
-                            <div class="absolute -left-[35px] bg-slate-300 w-4 h-4 rounded-full border-4 border-white"></div>
-                            <span class="text-slate-600 font-bold text-sm">Lycée Montmajour (Arles)</span> <span class="text-slate-400 text-xs font-bold ml-2">Obtenu en 2024</span>
-                            <h4 class="font-bold text-slate-800 mt-1 mb-2">Baccalauréat Général</h4>
-                            <p class="text-sm text-slate-600">Spécialités Mathématiques et Physique-Chimie + Option Maths Expertes.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========================================================= -->
-        <!-- PROJETS -->
-        <!-- ========================================================= -->
-        <section id="projets" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-12 relative">
-            <div id="projects-grid-view">
-                <div class="text-center mb-12">
-                    <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-600 font-bold px-4 py-2 rounded-full mb-6 border border-emerald-100">
-                        <i class="fa-solid fa-graduation-cap"></i> Épreuve E5 - BTS SIO Option SISR
-                    </div>
-                    <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">Projets & <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Tableau de Synthèse</span></h2>
-                    <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed mb-10">
-                        Retrouvez ci-dessous la cartographie officielle de mes réalisations professionnelles associées aux compétences du référentiel, ainsi que le détail de mes projets.
-                    </p>
                     
-                    <!-- Bouton pour télécharger le fichier officiel -->
-                    <a href="Tableau_de_Synthese_E5_Hugo_Tartrat.pdf" download="Tableau_de_Synthese_E5_Hugo_Tartrat.pdf" class="inline-flex items-center gap-3 bg-slate-900 hover:bg-emerald-600 text-white px-8 py-5 rounded-2xl font-bold transition-all shadow-xl hover:shadow-emerald-500/30 hover:-translate-y-1 text-lg mb-8">
-                        <i class="fa-solid fa-file-pdf text-2xl"></i> Télécharger mon Tableau E5
-                    </a>
-                </div>
-
-                <!-- CARTE DES PROJETS MAJEURS -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-                    <!-- PROJET 1 -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group" onclick="window.open('Migration MDM Jamf Pro &amp; Automatisation.pdf', '_blank')">
-                        <div class="h-56 relative overflow-hidden bg-slate-100">
-                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bbcbf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Jamf" class="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-80"></div>
-                            <div class="absolute bottom-4 left-4 right-4 text-white">
-                                <span class="bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider mb-2 inline-block">Projet Majeur</span>
-                                <h3 class="text-xl font-bold leading-tight">Migration MDM Jamf Pro & Automatisation</h3>
+                    <div class="space-y-6">
+                        <!-- BTS -->
+                        <div class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(20,184,166,0.1)] transition-shadow flex flex-col sm:flex-row gap-5">
+                            <div class="w-14 h-14 bg-teal-50 rounded-xl flex items-center justify-center text-teal-500 shrink-0 text-xl"><i class="fa-solid fa-school"></i></div>
+                            <div class="flex-1">
+                                <div class="flex flex-wrap justify-between items-start gap-2 mb-1">
+                                    <h4 class="font-bold text-slate-900 text-lg">BTS SIO (Option SISR)</h4>
+                                    <span class="bg-slate-50 text-slate-500 text-xs font-bold px-2.5 py-1 rounded-md border border-slate-100">2024 - 2026</span>
+                                </div>
+                                <p class="text-teal-600 font-bold text-sm mb-4">Campus de la CCI de Vaucluse (Avignon)</p>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-teal-400 mt-1"></i><span><strong>Administration Systèmes :</strong> Windows Server, Linux (Debian), Active Directory, environnements cloud.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-teal-400 mt-1"></i><span><strong>Réseaux :</strong> Modèle OSI, adressage IP, routage, commutation.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-teal-400 mt-1"></i><span><strong>Cybersécurité :</strong> Pare-feu, VPN, gestion des accès, sauvegarde.</span></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="p-6 flex-1 flex flex-col">
-                            <p class="text-sm text-slate-600 mb-4 flex-1">Déploiement de la solution MDM Jamf Pro pour centraliser la gestion, la configuration et la sécurité du parc Apple chez Tut Tut, avec automatisation des tâches.</p>
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Jamf Pro</span>
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">MDM</span>
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Automatisation</span>
+
+                        <!-- BAC -->
+                        <div class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(148,163,184,0.2)] transition-shadow flex flex-col sm:flex-row gap-5">
+                            <div class="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center text-slate-500 shrink-0 text-xl"><i class="fa-solid fa-book"></i></div>
+                            <div class="flex-1">
+                                <div class="flex flex-wrap justify-between items-start gap-2 mb-1">
+                                    <h4 class="font-bold text-slate-900 text-lg">Baccalauréat Général</h4>
+                                    <span class="bg-slate-50 text-slate-500 text-xs font-bold px-2.5 py-1 rounded-md border border-slate-100">Obtenu en 2024</span>
+                                </div>
+                                <p class="text-slate-500 font-bold text-sm mb-4">Lycée Montmajour (Arles)</p>
+                                <ul class="space-y-2 text-sm text-slate-600">
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-slate-400 mt-1"></i><span><strong>Spécialité 1 :</strong> Mathématiques.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-slate-400 mt-1"></i><span><strong>Spécialité 2 :</strong> Physique-Chimie.</span></li>
+                                    <li class="flex items-start gap-2"><i class="fa-solid fa-angle-right text-slate-400 mt-1"></i><span><strong>Option :</strong> Mathématiques Expertes.</span></li>
+                                </ul>
                             </div>
-                            <span class="w-full bg-slate-800 group-hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-colors text-sm flex justify-center items-center gap-2">
-                                Ouvrir la documentation PDF <i class="fa-solid fa-file-pdf"></i>
-                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- PROJETS (Design Éditorial) -->
+        <!-- ========================================================= -->
+        <section id="projets" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-16 relative">
+            <div id="projects-grid-view">
+                
+                <!-- EN-TÊTE ASYMÉTRIQUE -->
+                <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center lg:items-end mb-16 border-b border-slate-200 pb-12">
+                    <div class="lg:w-2/3 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 bg-slate-50 text-emerald-600 font-bold px-4 py-2 rounded-lg mb-6 border border-slate-200 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Épreuve E5 - Option SISR
+                        </div>
+                        <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6">Mes <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Projets</span> & Réalisations</h2>
+                        <p class="text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                            Retrouvez ci-dessous la cartographie officielle de mes réalisations professionnelles majeures et mineures, directement associées aux compétences du référentiel BTS.
+                        </p>
+                    </div>
+                    <div class="lg:w-1/3 flex justify-center lg:justify-end w-full">
+                        <a href="Tableau_de_Synthese_E5_Hugo_Tartrat.pdf" download="Tableau_de_Synthese_E5_Hugo_Tartrat.pdf" class="inline-flex items-center gap-3 bg-slate-900 hover:bg-emerald-600 text-white px-8 py-5 rounded-2xl font-bold transition-all shadow-xl hover:shadow-emerald-500/30 hover:-translate-y-1 w-full sm:w-auto justify-center">
+                            <i class="fa-solid fa-file-pdf text-2xl"></i> Tableau E5
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARTES MAJEURES (Format Alterné Editorial) -->
+                <div class="space-y-8 mb-24">
+                    
+                    <!-- PROJET 1 : Image à gauche -->
+                    <div class="bg-white rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(16,185,129,0.12)] transition-all duration-500 flex flex-col lg:flex-row overflow-hidden group cursor-pointer" onclick="window.open('Migration MDM Jamf Pro &amp; Automatisation.pdf', '_blank')">
+                        <div class="lg:w-5/12 relative min-h-[250px] lg:min-h-full overflow-hidden bg-slate-100">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bbcbf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Jamf" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90">
+                            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/80 to-transparent"></div>
+                            <div class="absolute top-6 left-6 bg-emerald-500 text-white text-[10px] font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider shadow-md">Projet Majeur</div>
+                        </div>
+                        <div class="lg:w-7/12 p-8 lg:p-12 flex flex-col justify-center">
+                            <h3 class="text-2xl lg:text-3xl font-extrabold text-slate-900 mb-4 group-hover:text-emerald-600 transition-colors">Migration MDM Jamf Pro & Automatisation</h3>
+                            <p class="text-slate-600 mb-8 text-base lg:text-lg leading-relaxed">Déploiement de la solution MDM Jamf Pro pour centraliser la gestion, la configuration et la sécurité du parc Apple chez Tut Tut, avec automatisation des tâches via des scripts avancés.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold rounded-lg border border-slate-200">Jamf Pro</span>
+                                <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold rounded-lg border border-slate-200">MDM</span>
+                                <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold rounded-lg border border-slate-200">Automatisation</span>
+                            </div>
+                            <div class="mt-auto pt-6 border-t border-slate-100">
+                                <span class="inline-flex items-center gap-2 text-emerald-600 font-bold group-hover:translate-x-2 transition-transform">
+                                    Ouvrir la documentation PDF <i class="fa-solid fa-file-pdf"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
 
-                    <!-- PROJET 2 -->
-                    <div class="bg-white rounded-2xl shadow-lg overflow-hidden border border-slate-200 flex flex-col hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer group" onclick="window.open('ZTNA &amp; Jamf Protect.pdf', '_blank')">
-                        <div class="h-56 relative overflow-hidden bg-slate-800">
-                            <!-- Dégradé de fond et effet au survol -->
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-90"></div>
-                            <div class="absolute inset-0 bg-emerald-500 opacity-0 group-hover:opacity-20 transition-opacity duration-500"></div>
-                            
-                            <!-- Icône décorative pour habiller le fond vide -->
-                            <i class="fa-solid fa-shield-halved absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-8xl text-slate-700 opacity-50 group-hover:scale-110 transition-transform duration-500"></i>
-
-                            <div class="absolute bottom-4 left-4 right-4 text-white z-10">
-                                <span class="bg-emerald-500 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider mb-2 inline-block">Projet Majeur</span>
-                                <h3 class="text-xl font-bold leading-tight">ZTNA & Jamf Protect</h3>
-                            </div>
+                    <!-- PROJET 2 : Image à droite (inversé) -->
+                    <div class="bg-white rounded-[2rem] border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(20,184,166,0.12)] transition-all duration-500 flex flex-col lg:flex-row-reverse overflow-hidden group cursor-pointer" onclick="window.open('ZTNA &amp; Jamf Protect.pdf', '_blank')">
+                        <div class="lg:w-5/12 relative min-h-[250px] lg:min-h-full overflow-hidden bg-slate-900 flex items-center justify-center">
+                            <div class="absolute inset-0 bg-gradient-to-bl from-teal-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            <i class="fa-solid fa-shield-halved text-8xl text-slate-700 opacity-50 group-hover:scale-110 transition-transform duration-700 group-hover:text-teal-500/40"></i>
+                            <div class="absolute top-6 right-6 lg:left-6 lg:right-auto bg-teal-500 text-white text-[10px] font-bold px-3 py-1.5 rounded-lg uppercase tracking-wider shadow-md">Projet Majeur</div>
                         </div>
-                        <div class="p-6 flex-1 flex flex-col">
-                            <p class="text-sm text-slate-600 mb-4 flex-1">Mise en place d'une architecture Zero Trust et analyse de sécurité continue des terminaux avec Jamf Protect chez Tut Tut.</p>
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Jamf Protect</span>
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">ZTNA</span>
-                                <span class="px-2 py-1 bg-slate-50 text-slate-600 text-[10px] font-bold rounded border border-slate-200">Cybersécurité</span>
+                        <div class="lg:w-7/12 p-8 lg:p-12 flex flex-col justify-center">
+                            <h3 class="text-2xl lg:text-3xl font-extrabold text-slate-900 mb-4 group-hover:text-teal-600 transition-colors">ZTNA & Jamf Protect</h3>
+                            <p class="text-slate-600 mb-8 text-base lg:text-lg leading-relaxed">Mise en place d'une architecture Zero Trust Network Access (ZTNA) et analyse de sécurité continue des terminaux grâce au déploiement de Jamf Protect.</p>
+                            <div class="flex flex-wrap gap-2 mb-8">
+                                <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold rounded-lg border border-slate-200">Jamf Protect</span>
+                                <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold rounded-lg border border-slate-200">ZTNA</span>
+                                <span class="px-3 py-1.5 bg-slate-50 text-slate-600 text-xs font-bold rounded-lg border border-slate-200">Cybersécurité</span>
                             </div>
-                            <span class="w-full bg-slate-800 group-hover:bg-emerald-500 text-white font-bold py-3 rounded-xl transition-colors text-sm flex justify-center items-center gap-2">
-                                Ouvrir la documentation PDF <i class="fa-solid fa-file-pdf"></i>
-                            </span>
+                            <div class="mt-auto pt-6 border-t border-slate-100">
+                                <span class="inline-flex items-center gap-2 text-teal-600 font-bold group-hover:translate-x-2 transition-transform">
+                                    Ouvrir la documentation PDF <i class="fa-solid fa-file-pdf"></i>
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- TABLEAU DES RÉALISATIONS MINEURES -->
-                <div class="mt-16 pt-12 border-t border-slate-200">
-                    <div class="text-center mb-10">
-                        <h2 class="text-2xl font-bold text-slate-800 mb-2 flex justify-center items-center gap-2">
-                            <i class="fa-solid fa-table-cells-large text-emerald-500"></i> Autres Réalisations (Tableau de Synthèse)
-                        </h2>
-                        <p class="text-sm text-slate-500">Aperçu global des situations professionnelles présentées dans mon tableau E5.</p>
+                <div class="pt-12">
+                    <div class="flex items-center gap-4 mb-10">
+                        <h3 class="text-2xl font-bold text-slate-900">Autres Réalisations</h3>
+                        <div class="h-px bg-slate-200 flex-1"></div>
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="minor-projects-container"></div>
-                </div>
-            </div>
-
-            <!-- VUE DÉTAILLÉE : PROJET 1 -->
-            <div id="project-detail-1" class="hidden animate-fadeIn max-w-7xl mx-auto py-8">
-                <button onclick="hideProjectDetail()" class="flex items-center gap-2 text-slate-500 hover:text-emerald-600 mb-8 font-medium transition-colors">
-                    <i class="fa-solid fa-arrow-left"></i> Retour aux projets
-                </button>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
-                    <h1 class="text-3xl font-extrabold text-slate-900 mb-6">Migration MDM Jamf Pro & Automatisation</h1>
-                    <p class="text-slate-600 mb-4">Détails du projet chez Tut Tut : Centralisation, sécurisation des terminaux Apple et création de scripts d'automatisation via le MDM Jamf Pro.</p>
-                </div>
-            </div>
-
-            <!-- VUE DÉTAILLÉE : PROJET 2 -->
-            <div id="project-detail-2" class="hidden animate-fadeIn max-w-7xl mx-auto py-8">
-                <button onclick="hideProjectDetail()" class="flex items-center gap-2 text-slate-500 hover:text-emerald-600 mb-8 font-medium transition-colors">
-                    <i class="fa-solid fa-arrow-left"></i> Retour aux projets
-                </button>
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
-                    <h1 class="text-3xl font-extrabold text-slate-900 mb-6">ZTNA & Jamf Protect</h1>
-                    <p class="text-slate-600 mb-4">Détails du projet chez Tut Tut : Mise en place d'une architecture Zero Trust et analyse de sécurité continue des terminaux avec Jamf Protect.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="minor-projects-container"></div>
                 </div>
             </div>
         </section>
 
         <!-- ========================================================= -->
-        <!-- VEILLE TECHNOLOGIQUE -->
+        <!-- VEILLE TECHNOLOGIQUE (Design Moderne) -->
         <!-- ========================================================= -->
         <section id="veille" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-16">
-            <div class="text-center mb-12">
-                <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-600 font-bold px-4 py-2 rounded-full mb-6 border border-emerald-100">
-                    <i class="fa-solid fa-rss"></i> Épreuve E5 - Veille Informatique
+            
+            <!-- EN-TÊTE & IMPACT (Design Split) -->
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 mb-20">
+                <!-- Titre & Intro -->
+                <div class="lg:w-1/2 flex flex-col justify-center">
+                    <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-600 font-bold px-4 py-2 rounded-lg mb-6 border border-emerald-100 shadow-sm w-fit">
+                        <i class="fa-solid fa-radar"></i> Épreuve E5 - Veille
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-black text-slate-900 mb-6 leading-tight">
+                        L'évolution de la <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Cybersécurité</span>
+                    </h2>
+                    <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                        Ma veille technologique se concentre sur les architectures <strong>Zero Trust</strong> et les nouvelles menaces réseaux.
+                    </p>
                 </div>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">L'évolution de la <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">Cybersécurité</span> dans les réseaux</h2>
-                <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                    Ma veille technologique se concentre sur la sécurisation des architectures modernes et les nouvelles menaces persistantes.
-                </p>
+                
+                <!-- Carte Impact Professionnel (Dark Mode) -->
+                <div class="lg:w-1/2 bg-slate-900 rounded-[2rem] p-8 lg:p-10 relative overflow-hidden shadow-2xl border border-slate-800 flex flex-col justify-center">
+                    <i class="fa-solid fa-quote-right absolute -top-4 -right-4 text-8xl text-emerald-500/10 rotate-12"></i>
+                    <h3 class="text-xl font-bold mb-4 text-emerald-400 flex items-center gap-3 relative z-10">
+                        <i class="fa-solid fa-bolt"></i> Impact sur mon poste
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed relative z-10 text-base lg:text-lg">
+                        L'analyse régulière de l'actualité cyber guide directement mes missions chez <strong>Tut Tut</strong>. Cela me permet d'adapter rapidement nos défenses, d'optimiser la gestion sécurisée de notre parc, et d'accompagner efficacement les collaborateurs vers les bons réflexes numériques.
+                    </p>
+                </div>
             </div>
 
             <!-- MÉTHODOLOGIE -->
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-8 mb-16">
-                <h3 class="text-xl font-bold text-slate-800 mb-6 flex items-center gap-3 border-b border-slate-100 pb-4">
-                    <i class="fa-solid fa-magnifying-glass-chart text-emerald-500"></i> Méthodologie & Outils de Veille
-                </h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-stone-50 p-6 rounded-xl border border-slate-100 hover:shadow-md transition-all">
-                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center mb-4 text-xl">
-                            <i class="fa-solid fa-crosshairs"></i>
-                        </div>
-                        <h4 class="font-bold text-slate-800 mb-2">1. Ciblage & Thème</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">Focus sur le <strong>Zero Trust</strong>, les vulnérabilités réseaux et la sécurité des environnements macOS/Apple en entreprise.</p>
+            <div class="mb-24">
+                <div class="flex items-center gap-4 mb-10">
+                    <h3 class="text-2xl font-bold text-slate-900">Ma Méthodologie</h3>
+                    <div class="h-px bg-slate-200 flex-1"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                    <div class="bg-white p-8 rounded-[1.5rem] border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:-translate-y-2 transition-transform duration-300">
+                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-6"><i class="fa-solid fa-crosshairs"></i></div>
+                        <h4 class="font-bold text-slate-900 text-lg mb-3">1. Ciblage thématique</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Focus précis sur le <strong>Zero Trust</strong>, les vulnérabilités réseaux et les bonnes pratiques de sécurité MDM (macOS/iOS).</p>
                     </div>
-                    <div class="bg-stone-50 p-6 rounded-xl border border-slate-100 hover:shadow-md transition-all">
-                        <div class="w-12 h-12 bg-teal-100 text-teal-600 rounded-lg flex items-center justify-center mb-4 text-xl">
-                            <i class="fa-solid fa-filter"></i>
-                        </div>
-                        <h4 class="font-bold text-slate-800 mb-2">2. Outils de Collecte</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">Utilisation d'agrégateurs de <strong>flux RSS (Feedly)</strong> et d'alertes par mots-clés Google pour centraliser l'information.</p>
+                    <div class="bg-white p-8 rounded-[1.5rem] border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:-translate-y-2 transition-transform duration-300">
+                        <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center text-xl mb-6"><i class="fa-solid fa-filter"></i></div>
+                        <h4 class="font-bold text-slate-900 text-lg mb-3">2. Collecte automatisée</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Centralisation de l'information via des agrégateurs de <strong>flux RSS (Feedly)</strong> et des alertes mots-clés pour ne rien manquer.</p>
                     </div>
-                    <div class="bg-stone-50 p-6 rounded-xl border border-slate-100 hover:shadow-md transition-all">
-                        <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4 text-xl">
-                            <i class="fa-solid fa-share-nodes"></i>
-                        </div>
-                        <h4 class="font-bold text-slate-800 mb-2">3. Traitement & Sources</h4>
-                        <p class="text-sm text-slate-600 leading-relaxed">Sources officielles (<strong>ANSSI, CERT-FR</strong>), blogs spécialisés (<strong>IT-Connect</strong>) et documentations constructeurs (Jamf, Apple Security).</p>
+                    <div class="bg-white p-8 rounded-[1.5rem] border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:-translate-y-2 transition-transform duration-300">
+                        <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-6"><i class="fa-solid fa-share-nodes"></i></div>
+                        <h4 class="font-bold text-slate-900 text-lg mb-3">3. Traitement & Sources</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">Analyse des bulletins officiels (<strong>ANSSI, CERT-FR</strong>), des blogs experts (IT-Connect) et des notes de sécurité Apple.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Flux RSS -->
-            <div class="flex flex-col md:flex-row items-center justify-between border-b border-slate-200 pb-4 mb-8 gap-4">
-                <h3 class="text-2xl font-bold text-slate-800 flex items-center gap-3">
-                    <i class="fa-solid fa-bolt text-amber-500"></i> Actualités IT (Flux en direct)
-                </h3>
-            </div>
-
-            <div id="rss-container" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                <div class="col-span-1 md:col-span-3 text-center py-10 text-slate-400">
-                    <i class="fa-solid fa-circle-notch fa-spin text-3xl mb-3"></i>
-                    <p>Récupération des derniers articles en cours...</p>
+            <!-- FLUX RSS (ACTUALITÉS) -->
+            <div>
+                <div class="flex items-center gap-4 mb-10">
+                    <h3 class="text-2xl font-bold text-slate-900"><i class="fa-solid fa-satellite-dish text-emerald-500 mr-2"></i> Flux d'actualités en direct</h3>
+                    <div class="h-px bg-slate-200 flex-1"></div>
                 </div>
-            </div>
 
-            <!-- IMPACT -->
-            <div class="bg-slate-900 rounded-2xl shadow-sm p-8 md:p-12 border border-slate-800 text-white">
-                <h3 class="text-2xl font-bold mb-4 flex items-center gap-3 text-white"><i class="fa-solid fa-lightbulb text-amber-400"></i> Impact sur ma pratique professionnelle</h3>
-                <p class="text-slate-300 leading-relaxed text-sm md:text-base">
-                    Cette veille technologique influence directement mon travail chez <strong>Tut Tut</strong>. La lecture régulière du CERT-FR et des rapports de sécurité Jamf me pousse à <strong>durcir les politiques de sécurité (Jamf Protect)</strong> et à automatiser les mises à jour critiques. Elle me permet également d'anticiper les nouvelles menaces pour sensibiliser les utilisateurs aux risques de phishing et de compromission d'identité.
-                </p>
+                <div id="rss-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center py-16 text-slate-400">
+                        <i class="fa-solid fa-circle-notch fa-spin text-4xl mb-4"></i>
+                        <p class="font-medium">Synchronisation des derniers articles en cours...</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -519,25 +574,12 @@
                  activeMobileBtn.classList.add('border-emerald-500', 'bg-emerald-50', 'text-emerald-700');
             }
             document.getElementById('mobile-menu').classList.add('hidden');
-            if(tabId === 'projets') hideProjectDetail();
             if(tabId === 'veille') chargerVeilleRSS();
             window.scrollTo(0,0);
         }
 
         function toggleMobileMenu() {
             document.getElementById('mobile-menu').classList.toggle('hidden');
-        }
-
-        function showProjectDetail(id) {
-            document.getElementById('projects-grid-view').classList.add('hidden');
-            document.getElementById(`project-detail-${id}`).classList.remove('hidden');
-            window.scrollTo(0,0);
-        }
-
-        function hideProjectDetail() {
-            document.getElementById('projects-grid-view').classList.remove('hidden');
-            document.getElementById('project-detail-1').classList.add('hidden');
-            document.getElementById('project-detail-2').classList.add('hidden');
         }
 
         function closeModal() {
@@ -554,21 +596,26 @@
         ];
 
         const container = document.getElementById('minor-projects-container');
-        minorProjects.forEach(p => {
-            const div = document.createElement('div');
-            const dataStr = JSON.stringify(p).replace(/"/g, '&quot;');
-            div.innerHTML = `
-                <div onclick="openModal(${dataStr})" class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all cursor-pointer group">
-                    <div class="flex justify-between items-start mb-3">
-                        <div class="p-2 bg-slate-50 rounded-lg group-hover:bg-emerald-50 transition-colors"><i class="${p.icon}"></i></div>
-                        <span class="text-[9px] font-bold uppercase tracking-wider bg-slate-100 text-stone-500 px-2 py-1 rounded-full">${p.cat}</span>
+        if(container) {
+            minorProjects.forEach(p => {
+                const div = document.createElement('div');
+                const dataStr = JSON.stringify(p).replace(/"/g, '&quot;');
+                div.innerHTML = `
+                    <div onclick="openModal(${dataStr})" class="bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-[0_8px_30px_rgb(16,185,129,0.1)] hover:-translate-y-2 transition-all duration-300 cursor-pointer group flex flex-col h-full relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-slate-50 rounded-bl-full -z-10 group-hover:bg-emerald-50 transition-colors duration-500"></div>
+                        <div class="flex justify-between items-start mb-5">
+                            <div class="w-12 h-12 bg-white border border-slate-100 shadow-sm rounded-xl flex items-center justify-center text-xl group-hover:scale-110 transition-transform duration-300"><i class="${p.icon}"></i></div>
+                            <span class="text-[10px] font-bold uppercase tracking-wider bg-slate-50 text-slate-500 px-3 py-1.5 rounded-lg border border-slate-200">${p.cat}</span>
+                        </div>
+                        <h4 class="font-bold text-slate-900 text-lg mb-3 group-hover:text-emerald-600 transition-colors leading-tight line-clamp-2">${p.title}</h4>
+                        <div class="mt-auto pt-4 flex items-center gap-2 text-sm font-bold text-slate-400 group-hover:text-emerald-500 transition-colors">
+                            Voir les détails <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </div>
                     </div>
-                    <h4 class="font-bold text-slate-800 text-sm mb-2 group-hover:text-emerald-600 transition-colors line-clamp-2">${p.title}</h4>
-                    <p class="text-xs text-slate-500 line-clamp-2">Cliquez pour voir les détails.</p>
-                </div>
-            `;
-            container.appendChild(div);
-        });
+                `;
+                container.appendChild(div);
+            });
+        }
 
         function openModal(data) {
             document.getElementById('modal-title').textContent = data.title;
@@ -588,7 +635,7 @@
             const feeds = [
                 { url: 'https://www.cert.ssi.gouv.fr/feed/', type: 'CERT-FR', icon: 'fa-shield-virus', badge: 'bg-red-600', fallbackImg: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80' },
                 { url: 'https://www.it-connect.fr/feed/', type: 'IT-Connect', icon: 'fa-network-wired', badge: 'bg-emerald-600', fallbackImg: 'https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=600&q=80' },
-                { url: 'https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml', type: 'Cyber Actu', icon: 'fa-lock', badge: 'bg-purple-600', fallbackImg: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80' }
+                { url: 'https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml', type: 'Cyber Actu', icon: 'fa-lock', badge: 'bg-indigo-600', fallbackImg: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80' }
             ];
             let htmlContent = '';
             for (const feed of feeds) {
@@ -604,24 +651,27 @@
                         if(cleanDesc.length > 150) cleanDesc = cleanDesc.substring(0, 150) + '...';
                         let imageUrl = feed.fallbackImg;
                         if (item.thumbnail) imageUrl = item.thumbnail;
+                        
                         htmlContent += `
-                            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden flex flex-col group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                                <div class="h-40 relative overflow-hidden bg-slate-800">
-                                    <img src="${imageUrl}" onerror="this.onerror=null;this.src='${feed.fallbackImg}';" alt="Illustration" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700">
-                                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent opacity-90"></div>
-                                    <div class="absolute top-4 left-4 ${feed.badge} text-white text-[10px] font-bold px-2 py-1 rounded shadow-sm uppercase tracking-wider flex items-center gap-1">
+                            <div class="bg-white rounded-[2rem] border border-slate-100 shadow-[0_4px_20px_rgb(0,0,0,0.03)] overflow-hidden flex flex-col group hover:shadow-[0_8px_30px_rgb(16,185,129,0.1)] hover:-translate-y-2 transition-all duration-300 cursor-pointer" onclick="window.open('${item.link}', '_blank')">
+                                <div class="h-48 relative overflow-hidden bg-slate-100">
+                                    <img src="${imageUrl}" onerror="this.onerror=null;this.src='${feed.fallbackImg}';" alt="Illustration" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+                                    <div class="absolute top-5 left-5 ${feed.badge} text-white text-[10px] font-bold px-3 py-1.5 rounded-lg shadow-sm uppercase tracking-wider flex items-center gap-1">
                                         <i class="fa-solid ${feed.icon}"></i> ${feed.type}
                                     </div>
-                                    <div class="absolute bottom-3 left-4 text-white text-xs font-medium flex items-center gap-1">
+                                </div>
+                                <div class="p-8 flex-1 flex flex-col relative">
+                                    <div class="absolute -top-5 right-6 bg-white px-3 py-1 rounded-full text-xs font-bold text-slate-500 shadow-md border border-slate-100 flex items-center gap-1">
                                         <i class="fa-regular fa-clock"></i> ${date}
                                     </div>
-                                </div>
-                                <div class="p-6 flex-1 flex flex-col">
-                                    <h4 class="font-bold text-sm text-slate-800 mb-3 group-hover:text-emerald-600 transition-colors line-clamp-2 leading-snug">${item.title}</h4>
-                                    <p class="text-xs text-slate-600 mb-6 flex-1 line-clamp-3 leading-relaxed">${cleanDesc}</p>
-                                    <a href="${item.link}" target="_blank" class="mt-auto w-full bg-slate-50 hover:bg-emerald-50 text-slate-700 hover:text-blue-700 font-bold py-2.5 rounded-xl transition-colors text-xs flex justify-center items-center gap-2 border border-slate-200 hover:border-emerald-200">
-                                        Lire l'article <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                    </a>
+                                    <h4 class="font-bold text-lg text-slate-900 mb-3 group-hover:text-emerald-600 transition-colors leading-snug line-clamp-2">${item.title}</h4>
+                                    <p class="text-sm text-slate-500 mb-6 flex-1 line-clamp-3 leading-relaxed">${cleanDesc}</p>
+                                    <div class="mt-auto pt-4 border-t border-slate-100">
+                                        <span class="inline-flex items-center gap-2 text-emerald-600 font-bold group-hover:translate-x-1 transition-transform">
+                                            Lire l'article <i class="fa-solid fa-arrow-right text-sm"></i>
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         `;

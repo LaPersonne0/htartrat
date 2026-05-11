@@ -349,10 +349,6 @@
                         </table>
                     </div>
                 </div>
-
-                <div class="mt-4 text-center text-sm text-slate-500">
-                    Document généré pour la présentation de l'alternance — <a href="https://www.tut-tut.com" target="_blank" class="text-emerald-600 hover:underline font-medium">www.tut-tut.com</a>
-                </div>
             </div>
 
             <!-- PARCOURS -->
@@ -518,7 +514,7 @@
         </section>
 
         <!-- ========================================================= -->
-        <!-- VEILLE TECHNOLOGIQUE (Design Dashboard / Bento mis à jour) -->
+        <!-- VEILLE TECHNOLOGIQUE -->
         <!-- ========================================================= -->
         <section id="veille" class="hidden animate-fadeIn max-w-6xl mx-auto px-4 py-16">
             
@@ -570,25 +566,15 @@
                 <!-- Bloc Methodo 2 -->
                 <div class="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
                     <div class="flex items-center justify-between mb-6">
-                        <div class="w-10 h-10 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-filter"></i></div>
-                        <span class="text-slate-200 font-black text-2xl">02</span>
-                    </div>
-                    <h4 class="font-bold text-slate-900 mb-2">Collecte automatisée</h4>
-                    <p class="text-sm text-slate-600">Mise en place d'outils d'agrégation (<strong>Feedly</strong>) et d'alertes ciblées pour garantir une réception continue et structurée de l'information technique.</p>
-                </div>
-
-                <!-- Bloc Methodo 3 -->
-                <div class="bg-white rounded-[2rem] p-8 border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
-                    <div class="flex items-center justify-between mb-6">
                         <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-full flex items-center justify-center"><i class="fa-solid fa-share-nodes"></i></div>
-                        <span class="text-slate-200 font-black text-2xl">03</span>
+                        <span class="text-slate-200 font-black text-2xl">02</span>
                     </div>
                     <h4 class="font-bold text-slate-900 mb-2">Analyse & Fiabilité</h4>
                     <p class="text-sm text-slate-600">Étude rigoureuse des bulletins institutionnels (<strong>ANSSI, CERT-FR</strong>), couplée à l'analyse de blogs experts (IT-Connect) et des notes de sécurité éditeurs.</p>
                 </div>
             </div>
 
-            <!-- SECTION ACTUALITÉS (Flux RSS encapsulé) -->
+            <!-- SECTION ACTUALITÉS (Flux Dynamique Restauré) -->
             <div class="bg-slate-50 rounded-[2.5rem] p-8 lg:p-10 border border-slate-200">
                 <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6 justify-between">
                     <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-3">
@@ -600,16 +586,15 @@
                     </button>
                 </div>
                 
-                <!-- Paragraphe analytique actualisé -->
                 <p class="text-slate-600 mb-10 max-w-4xl leading-relaxed">
-                    Veille continue synchronisée en temps réel avec <strong>6 sources de référence</strong> (institutionnelles, techniques et presse spécialisée). Cette agrégation permet une détection immédiate des failles critiques (Zero-Day), l'analyse des nouveaux vecteurs d'attaques et l'adaptation proactive de nos politiques de sécurité.
+                    Veille continue synchronisée en temps réel avec <strong>3 sources de référence</strong> (institutionnelles, techniques et presse spécialisée). Cette agrégation permet une détection immédiate des failles critiques (Zero-Day), l'analyse des nouveaux vecteurs d'attaques et l'adaptation proactive de nos politiques de sécurité.
                 </p>
 
                 <div id="rss-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                     <!-- Loading state -->
                     <div class="col-span-1 md:col-span-2 lg:col-span-3 text-center py-16 text-slate-400">
                         <i class="fa-solid fa-circle-notch fa-spin text-4xl mb-4"></i>
-                        <p class="font-medium">Synchronisation de l'analyse et des articles en cours...</p>
+                        <p class="font-medium">Synchronisation des derniers articles en cours...</p>
                     </div>
                 </div>
             </div>
@@ -623,14 +608,19 @@
                     <div class="h-px bg-slate-200 flex-1 hidden sm:block"></div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     
                     <!-- Article Majeur 1 -->
-                    <div class="bg-white rounded-2xl p-8 border-2 border-slate-100 hover:border-emerald-500 transition-colors shadow-sm relative group">
+                    <div class="bg-white rounded-2xl p-8 border-2 border-slate-100 hover:border-emerald-500 transition-colors shadow-sm relative group flex flex-col">
                         <div class="absolute -top-3 -right-3 w-8 h-8 bg-emerald-500 text-white rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform"><i class="fa-solid fa-thumbtack text-sm"></i></div>
-                        <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg mb-4 inline-block">Avril 2026</span>
-                        <h4 class="font-bold text-lg text-slate-900 mb-3 leading-snug">Application de la directive NIS2 : L'ANSSI hausse le ton</h4>
-                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">Face aux nouvelles exigences européennes, l'ANSSI a publié un rapport exigeant une accélération de la mise en conformité des SI français. La gestion stricte des accès (IAM) devient une obligation légale pour de nombreuses structures.</p>
+                        <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-3 py-1.5 rounded-lg mb-4 inline-block w-fit">Avril 2026</span>
+                        <h4 class="font-bold text-lg text-slate-900 mb-4 leading-snug">Application de la directive NIS2 : L'ANSSI hausse le ton</h4>
+                        
+                        <div class="bg-slate-50 p-4 rounded-xl mb-6 flex-1 border border-slate-100 group-hover:bg-emerald-50/50 transition-colors">
+                            <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider mb-2 block"><i class="fa-solid fa-file-lines mr-1"></i> Résumé</span>
+                            <p class="text-sm text-slate-600 leading-relaxed">Mise en demeure de l'ANSSI pour accélérer la conformité européenne. La gestion stricte des identités (IAM) devient une obligation légale absolue pour les structures.</p>
+                        </div>
+
                         <div class="flex flex-wrap gap-2 mt-auto">
                             <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">ANSSI</span>
                             <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">NIS2</span>
@@ -639,11 +629,16 @@
                     </div>
 
                     <!-- Article Majeur 2 -->
-                    <div class="bg-white rounded-2xl p-8 border-2 border-slate-100 hover:border-teal-500 transition-colors shadow-sm relative group">
+                    <div class="bg-white rounded-2xl p-8 border-2 border-slate-100 hover:border-teal-500 transition-colors shadow-sm relative group flex flex-col">
                         <div class="absolute -top-3 -right-3 w-8 h-8 bg-teal-500 text-white rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform"><i class="fa-solid fa-thumbtack text-sm"></i></div>
-                        <span class="text-xs font-bold text-teal-600 bg-teal-50 px-3 py-1.5 rounded-lg mb-4 inline-block">Mars 2026</span>
-                        <h4 class="font-bold text-lg text-slate-900 mb-3 leading-snug">Faille critique Zero-Day : Contournement des politiques MDM</h4>
-                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">Une vulnérabilité a brièvement permis de contourner les profils de configuration MDM sur certains parcs macOS. Cet événement a validé l'importance vitale des outils de détection continue comme Jamf Protect en complément.</p>
+                        <span class="text-xs font-bold text-teal-600 bg-teal-50 px-3 py-1.5 rounded-lg mb-4 inline-block w-fit">Mars 2026</span>
+                        <h4 class="font-bold text-lg text-slate-900 mb-4 leading-snug">Faille critique Zero-Day : Contournement des politiques MDM</h4>
+                        
+                        <div class="bg-slate-50 p-4 rounded-xl mb-6 flex-1 border border-slate-100 group-hover:bg-teal-50/50 transition-colors">
+                            <span class="text-[10px] font-bold text-teal-600 uppercase tracking-wider mb-2 block"><i class="fa-solid fa-file-lines mr-1"></i> Résumé</span>
+                            <p class="text-sm text-slate-600 leading-relaxed">Une vulnérabilité majeure a permis de contourner temporairement les profils MDM macOS, confirmant le besoin critique d'outils de détection continue (Jamf Protect) en renfort.</p>
+                        </div>
+
                         <div class="flex flex-wrap gap-2 mt-auto">
                             <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">Apple</span>
                             <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">MDM</span>
@@ -652,15 +647,56 @@
                     </div>
 
                     <!-- Article Majeur 3 -->
-                    <div class="bg-white rounded-2xl p-8 border-2 border-slate-100 hover:border-indigo-500 transition-colors shadow-sm relative group">
+                    <div class="bg-white rounded-2xl p-8 border-2 border-slate-100 hover:border-indigo-500 transition-colors shadow-sm relative group flex flex-col">
                         <div class="absolute -top-3 -right-3 w-8 h-8 bg-indigo-500 text-white rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform"><i class="fa-solid fa-thumbtack text-sm"></i></div>
-                        <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1.5 rounded-lg mb-4 inline-block">Janvier 2026</span>
-                        <h4 class="font-bold text-lg text-slate-900 mb-3 leading-snug">Attaques par rebond : Le périmètre classique définitivement obsolète</h4>
-                        <p class="text-sm text-slate-600 mb-6 leading-relaxed">Une vague d'attaques ciblant les VPN d'entreprise traditionnels a forcé de nombreux DSI à accélérer leur transition. Le modèle Zero Trust Network Access (ZTNA) s'impose désormais comme le seul standard viable.</p>
+                        <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1.5 rounded-lg mb-4 inline-block w-fit">Janvier 2026</span>
+                        <h4 class="font-bold text-lg text-slate-900 mb-4 leading-snug">Attaques par rebond : Le périmètre classique définitivement obsolète</h4>
+                        
+                        <div class="bg-slate-50 p-4 rounded-xl mb-6 flex-1 border border-slate-100 group-hover:bg-indigo-50/50 transition-colors">
+                            <span class="text-[10px] font-bold text-indigo-600 uppercase tracking-wider mb-2 block"><i class="fa-solid fa-file-lines mr-1"></i> Résumé</span>
+                            <p class="text-sm text-slate-600 leading-relaxed">Multiplication des attaques ciblant les VPN d'entreprise. Le modèle Zero Trust (ZTNA) devient le standard incontournable pour remplacer les accès périmétriques vulnérables.</p>
+                        </div>
+
                         <div class="flex flex-wrap gap-2 mt-auto">
                             <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">Zero Trust</span>
                             <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">VPN</span>
                             <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">ZTNA</span>
+                        </div>
+                    </div>
+
+                    <!-- Article Majeur 4 -->
+                    <div class="bg-white rounded-2xl p-8 border-2 border-slate-100 hover:border-rose-500 transition-colors shadow-sm relative group flex flex-col">
+                        <div class="absolute -top-3 -right-3 w-8 h-8 bg-rose-500 text-white rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform"><i class="fa-solid fa-thumbtack text-sm"></i></div>
+                        <span class="text-xs font-bold text-rose-600 bg-rose-50 px-3 py-1.5 rounded-lg mb-4 inline-block w-fit">Décembre 2025</span>
+                        <h4 class="font-bold text-lg text-slate-900 mb-4 leading-snug">MFA Fatigue : L'authentification forte classique ne suffit plus</h4>
+                        
+                        <div class="bg-slate-50 p-4 rounded-xl mb-6 flex-1 border border-slate-100 group-hover:bg-rose-50/50 transition-colors">
+                            <span class="text-[10px] font-bold text-rose-600 uppercase tracking-wider mb-2 block"><i class="fa-solid fa-file-lines mr-1"></i> Résumé</span>
+                            <p class="text-sm text-slate-600 leading-relaxed">Hausse alarmante des piratages par lassitude d'authentification. Les entreprises doivent migrer d'urgence vers l'authentification sans mot de passe (FIDO2) face au phishing.</p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">MFA Fatigue</span>
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">Phishing</span>
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">Passwordless</span>
+                        </div>
+                    </div>
+
+                    <!-- Article Majeur 5 -->
+                    <div class="bg-white rounded-2xl p-8 border-2 border-slate-100 hover:border-amber-500 transition-colors shadow-sm relative group flex flex-col">
+                        <div class="absolute -top-3 -right-3 w-8 h-8 bg-amber-500 text-white rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform"><i class="fa-solid fa-thumbtack text-sm"></i></div>
+                        <span class="text-xs font-bold text-amber-600 bg-amber-50 px-3 py-1.5 rounded-lg mb-4 inline-block w-fit">Novembre 2025</span>
+                        <h4 class="font-bold text-lg text-slate-900 mb-4 leading-snug">Ransomwares et AD : La sécurisation des identités au cœur de la défense</h4>
+                        
+                        <div class="bg-slate-50 p-4 rounded-xl mb-6 flex-1 border border-slate-100 group-hover:bg-amber-50/50 transition-colors">
+                            <span class="text-[10px] font-bold text-amber-600 uppercase tracking-wider mb-2 block"><i class="fa-solid fa-file-lines mr-1"></i> Résumé</span>
+                            <p class="text-sm text-slate-600 leading-relaxed">Les ransomwares exploitent systématiquement l'Active Directory pour élever leurs privilèges. La surveillance stricte des accès et l'hybridation (Entra ID) s'imposent.</p>
+                        </div>
+
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">Ransomware</span>
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">Active Directory</span>
+                            <span class="text-[10px] font-bold bg-slate-100 text-slate-500 px-2 py-1 rounded">IAM</span>
                         </div>
                     </div>
 
@@ -874,14 +910,11 @@
                 `;
             }
             
-            // Nouvelles sources de données ajoutées (6 sources au total)
+            // 3 sources conservées
             const feeds = [
                 { url: 'https://www.cert.ssi.gouv.fr/feed/', type: 'CERT-FR', icon: 'fa-shield-virus', badge: 'bg-red-600', fallbackImg: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80' },
                 { url: 'https://www.it-connect.fr/feed/', type: 'IT-Connect', icon: 'fa-network-wired', badge: 'bg-emerald-600', fallbackImg: 'https://images.unsplash.com/photo-1544197150-b99a580bbcbf?auto=format&fit=crop&w=600&q=80' },
-                { url: 'https://www.numerama.com/cyberspace/feed/', type: 'Numerama Cyber', icon: 'fa-user-secret', badge: 'bg-blue-600', fallbackImg: 'https://images.unsplash.com/photo-1614064641913-6b71a30f1fc3?auto=format&fit=crop&w=600&q=80' },
-                { url: 'https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml', type: 'LMI Sécurité', icon: 'fa-lock', badge: 'bg-indigo-600', fallbackImg: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80' },
-                { url: 'https://www.zataz.com/feed/', type: 'ZATAZ', icon: 'fa-bug', badge: 'bg-orange-600', fallbackImg: 'https://images.unsplash.com/photo-1562813733-b31f71025d54?auto=format&fit=crop&w=600&q=80' },
-                { url: 'https://www.zdnet.fr/feeds/rss/actualites/securite/', type: 'ZDNet', icon: 'fa-user-shield', badge: 'bg-slate-700', fallbackImg: 'https://images.unsplash.com/photo-1510511459019-5efa325aa262?auto=format&fit=crop&w=600&q=80' }
+                { url: 'https://www.lemondeinformatique.fr/flux-rss/thematique/securite/rss.xml', type: 'LMI Sécurité', icon: 'fa-lock', badge: 'bg-indigo-600', fallbackImg: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80' }
             ];
             
             let htmlContent = '';
